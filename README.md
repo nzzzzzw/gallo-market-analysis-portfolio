@@ -8,9 +8,27 @@
 
 ---
 
+## 🔗 Quick Navigation
+
+**📖 Documentation:**
+- [**About This Project**](ABOUT_PROJECT.md) - Full backstory, competition details, and what I learned
+- [**Data Dictionary**](DATA_DICTIONARY.md) - All data sources and variable definitions
+- [**Methodology**](METHODOLOGY.md) - Research design and validation methods
+
+**📊 Analyses:**
+- [**Prediction Validation**](analysis/prediction_validation.md) - Testing 2020 predictions against 2025 reality
+- [**Cross-Market Insights**](analysis/cross_market_insights.md) - North America vs China comparison
+
+**📈 Visualizations:**
+- [**Tableau Dashboard**](visualizations/cross_market_dashboard.twbx) - Interactive cross-market analysis
+
+---
+
 ## 👋 About This Project
 
-In December 2020, my team at Wake Forest University won **first place** in a class competition for developing a market entry strategy for E. & J. Gallo Winery's Barefoot Hard Seltzer in the Chinese market. We surveyed **273** consumers and made bold predictions about the future of hard seltzers.
+> **📖 Want the complete backstory?** This README gives you the overview. For the full origin story, competition details, and what I learned, see **[ABOUT_PROJECT.md →](ABOUT_PROJECT.md)**
+
+In December 2020, my team at Wake Forest University won **first place** in a class competition for developing a market entry strategy for E. & J. Gallo Winery's Barefoot Hard Seltzer in the Chinese market. We surveyed 273 consumers and made bold predictions about the future of hard seltzers.
 
 **Five years later, I revisited this analysis** to:
 - ✅ Validate our 2020 predictions with 2025 market data
@@ -208,18 +226,26 @@ Data analyst passionate about consumer behavior analytics and cross-market strat
 
 ## 📚 Additional Resources
 
-### Documentation
-- **[ABOUT_PROJECT.md](ABOUT_PROJECT.md)** - Detailed project origin story and 2020 competition context
+### 📖 Project Documentation
+- **[ABOUT_PROJECT.md](ABOUT_PROJECT.md)** - Complete origin story, competition context, and why I revisited this project in 2025
 - **[DATA_DICTIONARY.md](DATA_DICTIONARY.md)** - Complete data sources, variables, and methodology
 - **[METHODOLOGY.md](METHODOLOGY.md)** - Research design for both 2020 survey and 2025 validation
 
-### Original 2020 Project
+### 📊 Analyses
+- **[Prediction Validation Analysis](analysis/prediction_validation.md)** - How accurate were our 2020 predictions?
+- **[Cross-Market Insights](analysis/cross_market_insights.md)** - North America vs China comparison and strategic recommendations
+
+### 🎨 Visualizations
+- **[Cross-Market Dashboard](visualizations/cross_market_dashboard.twbx)** - Interactive Tableau dashboard (available after Day 5)
+- **[Charts & Visuals](visualizations/)** - All supporting charts and graphics
+
+### 📅 Original 2020 Project
 - **Team:** Wake Forest University MSM Class of 2020, Group 25
 - **Competition:** E. & J. Gallo Case Competition (December 2020)
 - **Result:** First Place 🏆
 - **Survey:** 273 responses, Chinese consumers aged 21-35
 
-### 2025 Data Sources
+### 📈 2025 Data Sources
 - Grand View Research (market sizing)
 - Precedence Research (growth projections)
 - Statista (brand share data)
@@ -231,58 +257,10 @@ Data analyst passionate about consumer behavior analytics and cross-market strat
 ## 🎓 Project Context
 
 **University:** Wake Forest University School of Business  
-**Course:** Market Research & Consumer Insights (MSM Program)  
+**Competition:** MSM Graduate Consulting Project (GCP) 
 **Original Completion:** December 2020  
 **Portfolio Update:** November 2025  
-**Time Investment (2025):** ~35 hours over 7 days
 
----
-
-## 🏆 What Makes This Portfolio Interview-Ready
-
-1. **Demonstrates Growth:** Clear before/after showing 5-year technical evolution
-2. **Shows Humility:** Openly discusses mistakes and learning process
-3. **Quantified Results:** 15% MAPE, $12B market, 50-52% market share
-4. **Business + Technical:** Combines analytical rigor with strategic thinking
-5. **Local Relevance:** Vancouver connection (White Claw HQ)
-6. **Reproducible:** Fully documented methods, data sources, and code
-7. **Visual Storytelling:** Professional Tableau dashboard with clear insights
-
----
-
-## 📝 How to Use This Repository
-
-### For Recruiters & Hiring Managers
-- Start with this README for project overview
-- Review [Prediction Validation](analysis/prediction_validation.md) for analytical approach
-- Explore [Tableau Dashboard](visualizations/cross_market_dashboard.twbx) for visualization skills
-- Check [METHODOLOGY.md](METHODOLOGY.md) for research rigor
-
-### For Technical Reviewers
-- Examine SQL queries in `scripts/market_analysis.sql`
-- Review Python data cleaning in `scripts/data_cleaning.py`
-- Inspect Tableau dashboard for best practices
-- Validate MAPE calculation methodology
-
-### For Fellow Students/Analysts
-- Read [ABOUT_PROJECT.md](ABOUT_PROJECT.md) for inspiration on portfolio upgrades
-- Study prediction validation approach for your own projects
-- Use documentation structure as template
-
----
-
-## 🚀 Next Steps
-
-Interested in discussing this project or data analyst opportunities?
-
-**I'm particularly interested in roles involving:**
-- Consumer behavior analytics
-- Market research and competitive intelligence
-- Cross-market or international business analysis
-- Tableau dashboard development
-- Survey design and statistical validation
-
-**Let's connect!** 📧 wzzclot@gmail.com
 
 ---
 

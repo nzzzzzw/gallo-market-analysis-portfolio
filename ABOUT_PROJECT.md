@@ -1,5 +1,9 @@
 # 📖 About This Project
 
+**[← Back to Main README](README.md)** | **[View Data Dictionary](DATA_DICTIONARY.md)** | **[View Methodology](METHODOLOGY.md)**
+
+---
+
 ## The Origin Story: December 2020
 
 ### The Competition
