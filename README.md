@@ -28,7 +28,7 @@
 
 > **📖 Want the complete backstory?** This README gives you the overview. For the full origin story, competition details, and what I learned, see **[ABOUT_PROJECT.md →](ABOUT_PROJECT.md)**
 
-In December 2020, my team at Wake Forest University won **first place** in a class competition for developing a market entry strategy for E. & J. Gallo Winery's Barefoot Hard Seltzer in the Chinese market. We surveyed 273 consumers and made bold predictions about the future of hard seltzers.
+In December 2020, my team at Wake Forest University won **first place** in the GCP competition for developing a market entry strategy for E. & J. Gallo Winery's Barefoot Hard Seltzer in the Chinese market. We surveyed 273 consumers and made bold predictions about the future of hard seltzers.
 
 **Five years later, I revisited this analysis** to:
 - ✅ Validate our 2020 predictions with 2025 market data

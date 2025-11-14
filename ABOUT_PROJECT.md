@@ -6,15 +6,25 @@
 
 ## The Origin Story: December 2020
 
-### The Competition
+### The Background
 
-In Fall 2020, Wake Forest University's Master of Science in Management (MSM) program partnered with **E. & J. Gallo Winery** for a semester-long market research case competition. Gallo, one of the world's largest wine producers, was watching Millennials and Gen Z consumers shift away from traditional wine and spirits toward a new category: **hard seltzers**.
+In Fall 2020, Wake Forest University's Master of Science in Management (MSM) program partnered with **E. & J. Gallo Winery** for a semester-long **Graduate Consulting Project**. Sponsored by Gallo's Winston & Salem Houses (Sales and Marketing departments), the project challenged student teams to address a critical business question:
 
-The challenge was clear: *"How should Gallo respond to the spiked seltzer trend?"*
+**"With the increase in spiked seltzer trends, consumers (mainly Millennials and Generation Z) are drinking less wine and/or spirits. How should Gallo handle this shift?"**
+
+Gallo had recently launched **Barefoot Seltzer**, the **only wine-based seltzer product currently in the market**, and sought actionable insights on two key challenges:
+
+1. **Competitive Positioning**: How can Barefoot Seltzer compete with category leaders like White Claw and Truly in attracting Millennial/Gen Z consumers?
+2. **Channel Strategy**: How can Gallo capitalize on the growth in the convenience channel to maximize Barefoot Seltzer sales?
+
+Student teams conducted comprehensive market research, consumer analysis, and sales data evaluation to propose strategies for expanding Gallo's market share and strengthening its presence in the rapidly growing seltzer category.
+
+The competition concluded in December 2020 with final presentations, during which student teams delivered their final recommendations, including both incremental changes that Gallo could immediately implement and innovative solutions, potentially including industry-disrupting ideas, aimed at capturing the next generation of beverage consumers.
+
 
 ### Our Team's Approach
 
-Our team (Group 25) chose to focus on **Barefoot Hard Seltzer's potential entry into the Chinese market**. At the time, hard seltzers were exploding in North America:
+Our team (Group 25) chose to focus on Barefoot Hard Seltzer's potential entry into the Chinese market. At the time, hard seltzers were exploding in North America:
 - White Claw dominated with ~60% market share
 - The category was growing at 200-300% annually
 - Brands like Truly, Bon & Viv, and Bud Light Seltzer were rushing in
@@ -24,7 +34,13 @@ Meanwhile, China represented an untapped opportunity with a massive consumer bas
 
 ### The Research
 
-We designed and executed a comprehensive market research project:
+We designed and executed a comprehensive market research project using a multi-framework analytical approach:
+
+**Analytical Frameworks:**
+- **STEEPG Analysis** - Evaluated Social, Technology, Economics, Environment, Policy, and Global factors affecting the Chinese hard seltzer market
+- **SWOT Analysis** - Assessed Barefoot's Strengths, Weaknesses, Opportunities, and Threats in entering China
+- **Competitive Benchmarking** - Systematic comparison of Barefoot vs. local competitors (RIO) and imported brands (Horoyoi)
+- **Brand Audit** - Applied Keller's Brand Pyramid and Elements of Value Pyramid to evaluate Barefoot's positioning potential
 
 **Primary Research:**
 - **273 survey responses** from Chinese consumers aged 21-35
@@ -47,24 +63,37 @@ We designed and executed a comprehensive market research project:
 
 ### Our Strategic Recommendations
 
-We presented a **wine-based positioning strategy** for Barefoot Hard Seltzer:
+We presented a wine-based positioning strategy for Barefoot Hard Seltzer:
 
-1. **Unique Selling Proposition:** "Premium wine-based seltzer" (vs. malt-based competitors)
-2. **Target Market:** Urban Chinese females, 25-35, health-conscious
-3. **Distribution:** E-commerce first (Tmall, JD.com), followed by retail
-4. **Pricing:** Premium positioning ($3-4 per can, 15% above competitors)
-5. **Marketing:** "Light, elegant, sophisticated" - playing to wine heritage
-6. **Projected Market Size:** $5 billion by 2025 in China
+1. **Unique Selling Proposition**: "Premium wine-based seltzer" (vs. malt-based competitors)
+2. **Target Market**: Urban Chinese females, 25-35, health-conscious
+3. **Distribution**: E-commerce first (Tmall, JD.com), followed by retail
+4. **Pricing**: Premium positioning ($3-4 per can, 15% above competitors)
+5. **Marketing**: "Light, elegant, sophisticated" - playing to wine heritage
+6. **Projected Market Size**: $5 billion by 2025 in China
 
 ### The Victory
 
 In December 2020, our team **won first place** in the Gallo Case Competition. 🏆
 
-The judges praised our thorough consumer research, data-driven insights, and innovative wine-based positioning strategy. We believed we had found a winning formula: leverage Gallo's wine expertise to differentiate in a crowded market.
+The judges praised our thorough consumer research, rigorous analytical frameworks, and innovative wine-based positioning strategy. We believed we had found a winning formula: leverage Gallo's wine expertise to differentiate in a crowded market.
 
-We were confident. We had the data. We had the strategy.
+We were confident. We had the data. We had the frameworks. We had the strategy.
 
 **We were also wrong about some critical assumptions.**
+
+## My Role in the 2020 Project
+
+**Team:** Wake Forest University MSM 2020, Group 25  
+**Team Members:** Hongling Yu, Xin Yin, Niko Wang, Jinru Yao, Yitong Gao
+
+**My Contributions:**
+- Co-designed the 273-response consumer survey (Qualtrics platform)
+- Conducted data analysis using Excel (pivot tables, descriptive statistics)
+- Developed insights on consumer demographics and purchase behavior
+- Contributed to market sizing and competitive analysis
+- Participated in final presentation strategy and delivery
+
 
 ---
 
@@ -94,7 +123,7 @@ Our core assumption—that wine-based positioning would be a differentiator—wa
 
 Meanwhile, Gallo's **vodka-based High Noon** became a massive success by targeting Gen Z with aggressive pricing, multiple ABV options (4.5% and 8%), and "real fruit juice" positioning.
 
-### Why This Matters for My Portfolio
+<!-- ### Why This Matters for My Portfolio
 
 Most data analyst portfolios showcase successful projects. **This one showcases both success and failure**, demonstrating:
 
@@ -108,55 +137,39 @@ In interviews, I can discuss not just technical skills, but how I:
 - Validate assumptions before making recommendations
 - Separate facts (data) from interpretations (strategy)
 - Learn from mistakes systematically
-- Apply statistical validation (MAPE methodology)
-
----
-
-## My Role in the 2020 Project
-
-**Team:** Wake Forest University MSM 2020, Group 25  
-**Team Members:** Hongling Yu, Xin Yin, Niko Wang, Jinru Yao, Yitong Gao
-
-**My Contributions:**
-- Co-designed the 273-response consumer survey (Qualtrics platform)
-- Conducted data analysis using Excel (pivot tables, descriptive statistics)
-- Developed insights on consumer demographics and purchase behavior
-- Contributed to market sizing and competitive analysis
-- Participated in final presentation strategy and delivery
-
-**Competition Result:** 🏆 First Place (out of 12 teams)
+- Apply statistical validation (MAPE methodology) -->
 
 ---
 
 ## The 2025 Portfolio Upgrade
 
-### Why Now?
+<!-- ### Why Now?
 
 As I actively search for data analyst roles in Vancouver's competitive job market, I needed a portfolio that:
 - Demonstrates real-world business thinking
 - Shows technical skill progression over time
 - Proves I can admit mistakes and learn from them
 - Connects to local Vancouver market (White Claw HQ)
-- Stands out from typical "analyzed Titanic dataset" portfolios
+- Stands out from typical "analyzed Titanic dataset" portfolios -->
 
 ### What Changed?
 
 **2020 Project:**
 - Tools: Excel, PowerPoint, Qualtrics
 - Analysis: Descriptive statistics, pivot tables, basic charts
-- Deliverables: 30-slide PowerPoint deck
+- Deliverables: 30-slide PowerPoint deck, Final Report
 - Audience: Academic judges and client (Gallo)
 
 **2025 Portfolio:**
 - Tools: Python (pandas), SQL, Tableau, GitHub
 - Analysis: Prediction validation (MAPE), cross-market comparison, statistical accuracy
 - Deliverables: Interactive dashboard, GitHub repository, markdown documentation
-- Audience: Hiring managers, technical recruiters, fellow analysts
+- Audience: people who are interested in this project
 
-### Time Investment
+<!-- ### Time Investment
 
 - **2020 Original Project:** ~60 hours over 8 weeks (team effort)
-- **2025 Portfolio Rebuild:** ~35 hours over 7 days (solo work)
+- **2025 Portfolio Rebuild:** ~35 hours over 7 days (solo work) -->
 
 ### New Analyses Added (2025)
 
@@ -179,31 +192,28 @@ As I actively search for data analyst roles in Vancouver's competitive job marke
 
 ### Technical Skills Demonstrated
 
-**Data Collection & Integration:**
+**Data Collection:**
 - Synthesized data from multiple sources (Grand View Research, Statista, IWSR)
 - Validated data consistency across different reports
-- Documented all sources and methodologies
+<!-- - Documented all sources and methodologies -->
 
 **Analysis:**
-- Python pandas for data manipulation
-- SQL queries for cross-market comparisons
+- Python pandas and SQL for data manipulation
 - Statistical validation (MAPE, accuracy metrics)
-- Qualitative vs. quantitative insights
+<!-- - Qualitative vs. quantitative insights -->
 
 **Visualization:**
 - Tableau Public for interactive dashboards
-- Chart selection based on data type and audience
-- Professional color schemes and formatting
 
 **Documentation:**
 - GitHub repository structure
 - Markdown for clear, accessible writing
 - Data dictionaries and methodology docs
-- Code commenting and version control
+<!-- - Code commenting and version control -->
 
 ---
 
-## Why This Project is Unique
+<!-- ## Why This Project is Unique
 
 ### 1. Prediction Validation (Rare in Portfolios)
 
@@ -243,9 +253,8 @@ Rebuilding the project shows:
 - Clear skill progression (Excel → Python/SQL/Tableau)
 - Self-directed learning ability
 - Initiative to revisit and improve past work
-- Commitment to professional development
+- Commitment to professional development -->
 
----
 
 ## What I Learned
 
@@ -273,7 +282,7 @@ Rebuilding the project shows:
 
 **Lesson:** Always benchmark against global trends, not just local data.
 
-### About Growth
+<!-- ### About Growth
 
 This project taught me that:
 - Making mistakes with good intentions is part of learning
@@ -295,11 +304,11 @@ This project taught me that:
 - Hiding mistakes or cherry-picking successes
 - Generic "I analyzed X dataset" without unique angle
 - Technical skills without business insight
-- Claiming skills you don't actually have
+- Claiming skills you don't actually have -->
 
 ---
 
-## Impact & Next Steps
+<!-- ## Impact & Next Steps
 
 ### For Job Applications
 
@@ -326,51 +335,26 @@ This project reinforced my interest in:
 - Market research and strategy
 - Cross-cultural business analysis
 - Tableau visualization
-- Survey design and statistical validation
+- Survey design and statistical validation -->
 
----
 
-## Connect With Me
-
-**Niko Wang**  
-📧 wzzclot@gmail.com  
-🔗 [linkedin.com/in/zizhuo-wang-niko](https://www.linkedin.com/in/zizhuo-wang-niko)  
-📍 Vancouver, BC, Canada
-
-**Actively seeking Data Analyst roles in:**
-- Market research & consumer insights
-- Business intelligence & analytics
-- Product analytics
-- Cross-market analysis
-
-**Let's discuss:**
-- This project's insights and methodology
-- Data analyst opportunities in Vancouver
-- How to build impactful portfolios
-- Market research and statistical validation
-
----
 
 ## Acknowledgments
 
 **Original 2020 Team:**
 - Hongling Yu, Xin Yin, Jinru Yao, Yitong Gao
 - Wake Forest University MSM Program
-- Professor [Course Instructor Name]
 
 **2025 Portfolio:**
 - Independent project (solo)
 - Data from public industry research sources
-- Built over 7 days in November 2025
 
 **Special Thanks:**
 - E. & J. Gallo Winery for the original case challenge
 - Wake Forest University for the competition opportunity
 - The 273 survey respondents from 2020
-- Industry researchers (Grand View, Statista, IWSR) for publicly available data
 
 ---
 
-**This is more than a portfolio project—it's a story about growth, humility, and the journey from student to professional analyst.**
 
 *Last Updated: November 12, 2025*
