@@ -4,7 +4,7 @@
 
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-November%202025-blue)]()
 [![Status](https://img.shields.io/badge/Status-Portfolio%20Ready-success)]()
-[![Tools](https://img.shields.io/badge/Tools-Python%20|%20SQL%20|%20Tableau-orange)]()
+[![Tools](https://img.shields.io/badge/Tools-%20SQL%20|%20Tableau-orange)]()
 
 ---
 
@@ -14,13 +14,8 @@
 - [**About This Project**](ABOUT_PROJECT.md) - Full backstory, competition details, and what I learned
 - [**Data Dictionary**](DATA_DICTIONARY.md) - All data sources and variable definitions
 - [**Methodology**](METHODOLOGY.md) - Research design and validation methods
+- [**Visualizations**](visualizations/cross_market_dashboard.twbx) - Interactive data analysis
 
-**📊 Analyses:**
-- [**Prediction Validation**](analysis/prediction_validation.md) - Testing 2020 predictions against 2025 reality
-- [**Cross-Market Insights**](analysis/cross_market_insights.md) - North America vs China comparison
-
-**📈 Visualizations:**
-- [**Tableau Dashboard**](visualizations/cross_market_dashboard.twbx) - Interactive cross-market analysis
 
 ---
 
@@ -31,14 +26,10 @@
 In December 2020, my team at Wake Forest University won **first place** in the GCP competition for developing a market entry strategy for E. & J. Gallo Winery's Barefoot Hard Seltzer in the Chinese market. We surveyed 273 consumers and made bold predictions about the future of hard seltzers.
 
 **Five years later, I revisited this analysis** to:
-- ✅ Validate our 2020 predictions with 2025 market data
-- ✅ Demonstrate technical growth (Excel → Python/SQL/Tableau)
-- ✅ Practice intellectual honesty (admitting what we got wrong)
-- ✅ Build cross-market insights (North America vs China)
+- ✅ Demonstrate technical growth (Excel → SQL/Tableau)
 
 **Key Finding:** Our quantitative predictions had **15% MAPE accuracy**, but our strategic assumption about wine-based positioning was fundamentally flawed. This taught me that even solid data can lead to wrong conclusions if core assumptions go untested.
 
-**Why This Matters for Vancouver:** This analysis focuses on hard seltzers, a category where **White Claw** (headquartered right here in Vancouver!) holds 50-52% market share in North America.
 
 ---
 
