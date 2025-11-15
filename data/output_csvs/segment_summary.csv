@@ -1,0 +1,5 @@
+﻿segment,respondents,pct_of_sample,avg_price,avg_frequency,avg_annual_spend,avg_ltv
+"Male 21-30, Tried",62,22.7,12.66,19.1,308.0,925.0
+"Female 21-30, Tried",92,33.7,13.15,11.8,154.0,462.0
+Other Segments,99,36.3,11.99,10.9,137.0,410.0
+"Age 21-30, Not Tried",20,7.3,13.75,,,
