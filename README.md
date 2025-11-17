@@ -8,7 +8,14 @@ In Fall 2020, **E. & J. Gallo Winery**—the world's largest family-owned winery
 
 Wake Forest University's MSM program partnered with Gallo for a semester-long consulting project. As a **student analytics team**, our objective was to answer:
 
+**The Challenge:**  
+> **"With the increase in spiked seltzer trends, consumers (mainly Millennials and Generation Z) are drinking less wine and/or spirits. How should Gallo handle this shift?"**
+
+Student teams presented in December 2020, proposing both **actionable strategies** for immediate implementation and **innovative concepts** to capture the next generation of consumers.
+
+So our team choose the topic:
 > **"Can Barefoot Hard Seltzer successfully enter the Chinese market using premium wine-based positioning? Which consumer segments, channels, and pricing strategies maximize market penetration?"**
+
 
 **Our Approach:** Designed and executed a 273-response consumer survey across major Chinese cities, applying STEEPG analysis, SWOT framework, competitive benchmarking, and Keller's Brand Equity Pyramid to develop a data-backed market entry strategy.
 
@@ -52,7 +59,7 @@ Wake Forest University's MSM program partnered with Gallo for a semester-long co
 <summary><b>👤 My Role in the 2020 Project →</b></summary>
 
 **Research Phase:**
-- Co-designed 273-response survey (Qualtrics), coordinated distribution via WeChat
+- Co-designed 273-response survey, coordinated distribution via WeChat
 - Ensured demographic target alignment and response quality
 
 **Analysis Phase:**
@@ -609,20 +616,3 @@ This analysis of 273 Chinese consumer survey responses reveals **five critical i
 **Last Updated:** November 15, 2025  
 **Author:** Niko Wang  
 **Contact:** wzzclot@gmail.com | [LinkedIn](https://www.linkedin.com/in/zizhuo-wang-niko)
-
----
-
-## 📝 Key Revisions from 2020 Analysis
-
-**Major Strategic Pivots:**
-1. **Target Segmentation:** Shifted from female-only (34%) to gender-neutral 21-30 (56.4%) with differentiated messaging
-2. **Business Metrics:** Updated TAM from ¥4.6B to ¥8.5B; Year 1 revenue target from ¥230M to ¥254M
-3. **Gender Insights:** Discovered male 2x higher spend (¥308 vs ¥154), contradicting North American female-focused trends
-4. **Wine-Base Positioning:** Downgraded from "core differentiator" to "unvalidated hypothesis requiring blind testing"
-5. **Annual Spend:** Refined from theoretical ¥169 to observed ¥188 (SQL-validated average)
-
-**Data Quality Improvements:**
-- Removed unvalidated demographic claims (education, income, specific city tier percentages)
-- Added missing value transparency (6.16% overall)
-- Clarified survey geographic distribution (45% major cities, 55% other urban areas)
-- Validated all business metrics through systematic SQL queries
