@@ -359,54 +359,28 @@ After data cleaning and transformation, the following structured datasets were c
 **Use Case:** Validate/challenge original gender-based targeting assumptions
 
 </details>
-
-
 ## 3. Executive Summary
 
 ### Overview of Findings
 
-This analysis of 273 Chinese consumer survey responses reveals **five critical insights** for Barefoot Hard Seltzer's market entry strategy:
+This analysis of 273 Chinese consumer survey responses reveals **four critical insights** for Barefoot Hard Seltzer's market entry strategy:
 
-1. **High Market Readiness:** 87% trial rate among respondents indicates strong category awareness and low customer education costs, positioning hard seltzers as a growth category rather than nascent market.
+**1. High Category Awareness**  
+87% of respondents (238/273) have already tried hard seltzers, indicating mature category awareness. Marketing can focus on brand differentiation rather than category education.
 
-2. **Convenience-Led Distribution:** 85% prefer convenience store purchases vs 46% e-commerce, requiring strategic pivot from digital-first to offline-retail-led channel strategy with estimated 3x better unit economics (14.5:1 vs 4.6:1 LTV/CAC).
+**2. Convenience Store Channel Dominance**  
+85% of respondents purchase hard seltzers at convenience stores, compared to 76% at supermarkets and 46% through e-commerce. Distribution strategy should prioritize offline retail channels.
 
-3. **Premium Positioning Validated:** 63% willing to pay ¥10-15+ per unit (premium tier) with average acceptable price of ¥12.7, supporting 15-20% price premium vs mass-market competitors like RIO.
+**3. Premium Price Acceptance**  
+63% of respondents (173/273) accept pricing of ¥10+ per unit, with average acceptable price of ¥12.7. This validates premium positioning above mass-market competitors.
 
-4. **Gender-Differentiated Customer Economics:** Average annual spend of ¥188 per customer (3-year LTV: ¥564), with significant gender variation in 21-30 target group—male consumers demonstrate 2x higher spend (¥308 vs ¥154) despite smaller segment size (22.7% vs 33.7%), requiring dual-target approach rather than female-only focus. Primary target segment (21-30, all genders, tried seltzers) represents 56.4% of sample.
+**4. Gender-Differentiated Consumption Patterns**  
+Male consumers show 2x higher annual spend (¥276 vs ¥135) driven by higher purchase frequency (18.2 vs 10.5 times/year). Target strategy should include both genders rather than female-only focus.
 
-5. **Wine-Base Positioning Unvalidated:** Survey did not test wine vs malt preference in blind format. While gender price differential is minimal (¥12.80 female vs ¥12.45 male, only +2.8%), focus should be on tangible benefits (glass packaging, natural ingredients) rather than unproven alcohol base differentiation—requires blind taste testing before heavy investment in wine-base messaging.
+**Target Market Size:**  
+Primary target segment (ages 21-30, tried hard seltzers) represents 56.4% of sample (154/273 respondents: 92 female + 62 male).
 
-**Business Impact:** Combined target segment (56.4% of sample, ages 21-30, tried seltzers) = **45M urban millennials** × ¥188 average annual spend = **¥8.5B total addressable market**. Conservative Year 1 capture (3% share) = **¥254M revenue opportunity**.
-
-**View Live Dashboard:**  
-👉 [Consumer Insights (Tableau Book)](/visualizations/barefoot-hard-seltzer-market-analysis.twb)
-<!-- 
-**Dashboard Organization:**
-
-The interactive dashboard contains **9 visualizations** organized into three thematic sections:
-
-#### **Demographics Section (3 visualizations)**
-- Gender Distribution: 61% Female, 39% Male breakdown
-- Age Distribution: 64% concentration in 21-30 age range
-- Trial Rate by Segment: 87% overall trial rate with segment breakdown
-
-#### **Preferences Section (3 visualizations)**
-- Packaging Preferences: 72% glass bottle preference
-- Flavor Rankings: Top 5 flavor categories
-- Price Acceptance: 63% willing to pay ¥10+ premium
-
-#### **Behavior Section (3 visualizations)**
-- Channel Penetration: 85% convenience store preference
-- Purchase Frequency: Distribution across daily/weekly/monthly/yearly buyers
-- Annual Spend Analysis: Male vs Female consumption patterns (¥308 vs ¥154)
-
-**Key Features:**
-- Interactive filters by age, gender, trial status
-- Hover tooltips with detailed metrics
-- Annotations highlighting critical insights
-- Consistent brand color palette throughout
-- Mobile-responsive design -->
+---
 
 ## 4. Insights Deep Dive
 
@@ -414,187 +388,181 @@ The interactive dashboard contains **9 visualizations** organized into three the
 
 **Visualization:** *Demographics - Trial*
 
-**Key Metric:** 87% hard seltzer trial rate (238/273 respondents)
+**Key Finding:** 87% trial rate (238/273 respondents) across all segments.
 
-**Findings:**
-- **High category penetration:** 87.2% of respondents have already tried hard seltzers, indicating mature awareness despite "emerging market" classification
-- **Purchase frequency distribution:** 38% buy monthly, 38% yearly, 10% weekly, suggesting behavioral segmentation opportunity
-- **Average annual consumption:** 13.4 purchases per year (among those who purchase), providing reliable baseline for LTV calculations
-- **Strategic implication:** Market is ready for new entrants—focus on differentiation and share capture rather than consumer education
+**Segment Breakdown:**
+- Female 21-30: 100% trial rate (92/92)
+- Male 21-30: 100% trial rate (62/62)  
+- Other Segments: 84.8% trial rate (84/99)
+- Age 21-30, Not Tried: 0% by definition (20 respondents)
 
-**Business Metric:**
-- **Customer acquisition efficiency:** High trial rate reduces marketing spend on awareness (estimated -30% CAC vs nascent category)
-- **Market entry timing:** 87% trial + low brand loyalty = ideal window for premium positioning before consolidation
-
-**What This Means:**
-Unlike a nascent market requiring heavy category education (30-40% trial rates), this 87% trial rate indicates Barefoot can immediately focus on brand differentiation and competitive positioning. Marketing dollars should emphasize "better than what you're drinking now" rather than "try hard seltzers for the first time."
+**Implication:** High existing category awareness means marketing resources can focus on brand switching and competitive differentiation rather than consumer education about the hard seltzer category itself.
 
 ---
 
-### 4.2 Channel Strategy & Distribution Economics
+### 4.2 Channel Preferences & Distribution
 
 **Visualization:** *Behavior - Channels*
 
-**Key Metric:** 85% convenience store preference vs 46% e-commerce
+**Key Finding:** 85% convenience store preference (233/273 respondents), followed by 76% supermarkets (206/273) and 46% e-commerce (126/273).
 
-**Findings:**
-- **Convenience stores dominate:** 85.3% of respondents purchase through convenience stores, contradicting initial e-commerce-first hypothesis
-- **Multi-channel behavior:** 76% also use supermarkets, 46% use e-commerce (Tmall, JD.com), indicating complementary rather than exclusive channel preferences
-- **Fresh platforms underutilized:** Only 24% use specialty platforms (Hema Fresh), suggesting niche rather than mass channel
-- **Brand website negligible:** 8% purchase via brand websites, deprioritizing direct-to-consumer investment
+**Channel Penetration:**
+| Channel | Selections | Penetration |
+|---------|-----------|-------------|
+| Convenience Store | 233 | 85.3% |
+| Supermarket | 206 | 75.5% |
+| E-commerce | 126 | 46.2% |
+| Fresh Platform | 66 | 24.2% |
+| Brand Website | 22 | 8.1% |
 
-**Business Metric:**
-- **Channel unit economics (estimated):**
-  - Convenience: 14.5:1 LTV/CAC ratio (¥35 CAC via placement fees)
-  - Supermarket: 10:1 ratio (¥50 CAC)
-  - E-commerce: 4.6:1 ratio (¥110 CAC via CPC/CPM)
-- **Distribution reach:** 50,000 major city convenience stores × 500 daily traffic = 25M daily touchpoints vs 10M online impressions
-- **Strategic revision:** Phase 1 = Convenience (not e-commerce), prioritizing 200M+ offline consumer touchpoints
-
-**What This Means:**
-The data contradicts common assumptions about Chinese e-commerce dominance for beverage alcohol. Convenience stores offer 3x better ROI than digital channels for impulse beverage purchases. Year 1 strategy should prioritize 5,000 convenience store placements in tier-1 cities before investing heavily in e-commerce.
+**Implication:** Convenience stores and supermarkets are primary purchase channels, indicating offline retail should be prioritized over e-commerce for initial market entry. Fresh platforms and brand websites show limited adoption.
 
 ---
 
-### 4.3 Premium Positioning & Price Sensitivity
+### 4.3 Price Sensitivity & Premium Positioning
 
 **Visualization:** *Preferences - Price*
 
-**Key Metric:** ¥12.7 average acceptable price (63% willing to pay ¥10-15+)
+**Key Finding:** 63% willing to pay ¥10+ per unit (173/273), with average acceptable price of ¥12.7.
 
-**Findings:**
-- **Price tolerance distribution:** 34% accept ¥5-10, 34% accept ¥10-15, 16% accept ¥15-20, 14% accept ¥20+
-- **Premium segment validated:** 63.4% willing to pay ¥10+ (vs RIO baseline ~¥7-8), supporting 15-20% premium strategy
-- **Gender price parity:** Minimal differential (female ¥12.80 vs male ¥12.45, only +2.8%), contradicting "female pays more" assumption
-- **Quality-price correlation:** Premium pricing must be anchored in tangible benefits (glass packaging, superior ingredients) rather than demographic targeting alone
+**Price Distribution:**
+- ¥0-5: 10 respondents (3.7%)
+- ¥5-10: 90 respondents (33.0%)
+- ¥10-15: 92 respondents (33.7%)
+- ¥15-20: 43 respondents (15.8%)
+- ¥20+: 38 respondents (13.9%)
 
-**Business Metric:**
-- **Average transaction value:** ¥12.7 × 2 units per occasion = ¥25.4 basket size
-- **Annual customer value:** 13.4 purchases × ¥12.7 = ¥170/year theoretical (actual observed: ¥188 average)
-- **Contribution margin:** At 40% gross margin, premium pricing adds ¥27/customer/year incremental profit vs mass market
-- **LTV calculation:** ¥188 × 3 years = ¥564 customer lifetime value
+**Gender Price Parity:** Female average ¥12.80 vs Male average ¥12.45 (only 2.8% difference), indicating minimal gender-based price differentiation.
 
-**What This Means:**
-Two-thirds of target consumers will accept premium pricing (¥10-15+), validating a ¥15-18 price point that positions Barefoot above mass-market RIO (¥7-8) but competitive with import premium Horoyoi (¥12-15). This premium positioning must be justified through tangible quality signals—glass packaging, natural ingredients, international brand equity—rather than unsubstantiated claims.
+**Implication:** Two-thirds of target market accepts premium pricing (¥10-15+), supporting a price point above mass-market competitors while remaining accessible to majority of consumers.
 
 ---
 
-### 4.4 Target Segment Profiling & Gender Analysis
+### 4.4 Target Segment Analysis & Gender Economics
 
 **Visualizations:** *Demographics - Gender, Demographics - Age, Behavior - Spend*
 
-**Key Metric:** 56.4% primary target (21-30, tried seltzers, all genders)
+**Key Finding:** Primary target (ages 21-30, tried seltzers) = 154 respondents (56.4% of sample), with significant gender consumption differences.
 
-**Findings:**
-- **Gender-neutral segmentation:** 154 respondents (56.4%) = Ages 21-30, active hard seltzer consumers (regardless of gender)
-- **Gender composition within target:**
-  - Female 21-30: 92 respondents (33.7% of total sample)
-  - Male 21-30: 62 respondents (22.7% of total sample)
-- **Critical gender insight:** Male segment shows **2x higher annual spend** (¥308 vs ¥154) driven by elevated purchase frequency (19.1 vs 11.8 times/year), contradicting initial female-focused hypothesis
-- **Age concentration:** 64% of sample aged 21-30, with 46% in 21-25 cohort alone
-- **Behavioral patterns:** Primary target shows 88.5% trial rate, preference for glass bottles (73%), and convenience store purchases (85%+)
+**Gender Breakdown:**
+| Metric | Female (n=167) | Male (n=106) | Difference |
+|--------|---------------|--------------|------------|
+| % of Sample | 61.2% | 38.8% | — |
+| Avg Annual Spend | ¥135 | ¥276 | **2.0x** |
+| Avg Frequency | 10.5/year | 18.2/year | **1.7x** |
+| 3-Year LTV | ¥405 | ¥827 | **2.0x** |
+| Trial Rate | 88.6% | 84.9% | -3.7pp |
 
-**Business Metric:**
-- **Female 21-30 segment value:** 92 respondents × ¥154 annual = ¥14.2K sample value (larger size, lower per-customer value)
-- **Male 21-30 segment value:** 62 respondents × ¥308 annual = ¥19.1K sample value (smaller size, **2x per-customer value**)
-- **Combined target value:** 154 respondents × ¥216 blended average = ¥33.3K (demonstrates value of gender-neutral approach)
-- **Market sizing:** 80M urban millennials × 56.4% target penetration = **45M addressable consumers** (vs 27M if female-only)
-- **TAM calculation:** 45M × ¥188 = **¥8.5B** total addressable market (vs ¥4.6B female-only scenario)
+**Target Segment Detail:**
+| Segment | Size | % of Sample | Avg Frequency | Avg Spend | 3-Year LTV |
+|---------|------|-------------|---------------|-----------|------------|
+| Female 21-30, Tried | 92 | 33.7% | 11.8/yr | ¥154 | ¥462 |
+| Male 21-30, Tried | 62 | 22.7% | 19.1/yr | ¥308 | ¥925 |
+| Other Segments | 99 | 36.3% | 10.9/yr | ¥137 | ¥410 |
+| Age 21-30, Not Tried | 20 | 7.3% | — | — | — |
 
-**Target Segment Performance Summary:**
+**Segment Value Calculation:**
+- Female 21-30 sample value: 92 × ¥154 = ¥14,168
+- Male 21-30 sample value: 62 × ¥308 = ¥19,096
+- Male segment contributes 57.4% of target segment value despite being only 40.3% of target size
 
-| Segment | Sample Size | % of Total | Avg Frequency | Avg Spend | 3-Year LTV | Segment Value |
-|---------|-------------|------------|---------------|-----------|------------|---------------|
-| **Male 21-30, Tried** | 62 | 22.7% | 19.1/yr | ¥308 | ¥925 | ¥19.1K (59%) |
-| **Female 21-30, Tried** | 92 | 33.7% | 11.8/yr | ¥154 | ¥462 | ¥14.2K (41%) |
-| Other Segments | 99 | 36.3% | 10.9/yr | ¥137 | ¥410 | ¥13.6K |
-| Age 21-30, Not Tried | 20 | 7.3% | - | - | - | - |
-
-**Strategic Implication:**
-
-> **Initial female-focused targeting based on North American hard seltzer trends does not align with Chinese consumer data.** Recommend gender-neutral positioning (21-30, all genders) with differentiated messaging: wellness/health positioning for female consumers, social occasions/variety positioning for male consumers. Female-only approach would forfeit **59% of target segment value** (¥19.1K male contribution vs ¥33.3K combined).
-
-**What This Means:**
-While female consumers represent a larger segment (33.7% vs 22.7%), male consumers drive disproportionate value through higher frequency (19.1 vs 11.8 purchases/year). A dual-target strategy with differentiated messaging—wellness for females, social occasions for males—maximizes both reach (56.4% of market) and value (¥8.5B TAM vs ¥4.6B female-only).
+**Implication:** Male consumers drive disproportionate value through higher purchase frequency, not higher price tolerance. A gender-neutral dual-target approach maximizes both market reach (56.4% vs 33.7% female-only) and total addressable value.
 
 ---
 
-### 4.5 Product Preferences & Packaging
+### 4.5 Product Preferences - Packaging
 
-**Visualizations:** *Preferences - Packaging, Preferences - Flavors*
+**Visualization:** *Preferences - Packaging*
 
-**Key Metrics:** 72% glass bottle preference | Top flavor: Apple/Pear/Peach (55%)
+**Key Finding:** 72% prefer glass bottles (197/273), followed by 62% cans (170/273) and 8% plastic (22/273). Multi-select allowed.
 
-**Findings:**
-- **Packaging hierarchy:** Glass bottles 72% (197/273), metal cans 62%, plastic bottles 16% (multi-select allowed)
-- **Premium perception:** Glass associates with quality, sustainability, Instagram-worthy aesthetics (stated reasons: "premium look", "better taste", "recyclable")
-- **Flavor preferences:** Apple/Pear/Peach (55%), Grape/Cherry/Blueberry (45%), Lemon/Grapefruit/Orange (42%) lead preferences
-- **ABV preference:** 5% ABV most acceptable (matches global hard seltzer standard), with 2-5% range acceptable to 60%+
+**Packaging Preferences:**
+- Glass bottles: 197 selections (72.2%)
+- Metal cans: 170 selections (62.3%)
+- Plastic bottles: 22 selections (8.1%)
 
-**Business Metric:**
-- **Packaging cost differential:** Glass bottles +¥0.50-1.00 per unit vs cans, but support 15%+ price premium (net positive margin)
-- **Production implications:** Glass-first strategy requires different supply chain (bottling lines, logistics) vs can-focused competitors
-- **Sustainability premium:** 72% preference signals opportunity for eco-positioning (recycled glass, carbon-neutral messaging)
+**Gender Comparison:**
+- Female glass preference: 73.1%
+- Male glass preference: 70.8%
+- Minimal gender difference (2.3 percentage points)
 
-**What This Means:**
-Glass packaging isn't just a preference—it's a tangible differentiation point that justifies premium pricing. While glass adds ¥0.50-1.00 per unit cost, the 15%+ price premium more than compensates. Lead with 330ml glass bottles at ¥15-18, introduce 355ml cans as secondary SKU for portability occasions (¥12-14).
+**Implication:** Glass packaging shows strong preference across both genders, supporting premium positioning. Cans appeal to majority as complementary format for different occasions.
 
 ---
 
-### 4.6 Purchase Frequency & Consumption Patterns
+### 4.6 Product Preferences - Flavors
+
+**Visualization:** *Preferences - Flavors*
+
+**Key Finding:** Apple/Pear/Peach leads at 54.6%, followed by Grape/Cherry/Blueberry (45.4%) and citrus flavors (41.8%).
+
+**Top 5 Flavor Categories:**
+1. Apple/Pear/Peach: 54.6%
+2. Grape/Cherry/Blueberry: 45.4%
+3. Lemon/Grapefruit/Orange: 41.8%
+4. Mango/Pineapple/Passion Fruit: 32.2%
+5. Tea: 5.5%
+
+**Implication:** Launch portfolio should include 3-4 core flavors covering fruit-forward categories (apple/pear, berry, citrus, tropical) that appeal to 40-55% of target market each.
+
+---
+
+### 4.7 Purchase Frequency Distribution
 
 **Visualization:** *Behavior - Frequency*
 
-**Key Metric:** 13.4 average annual purchases (among active consumers)
+**Key Finding:** Purchase frequency splits between monthly (44%) and yearly (44%) buyers, with 12% weekly+ frequency.
 
-**Findings:**
-- **Frequency distribution:** 38% monthly buyers, 38% yearly buyers, 10% weekly buyers, 14% daily buyers
-- **Gender frequency gap:** Male 19.1 purchases/year vs Female 11.8 purchases/year (62% higher)
-- **High-value segment:** Top 25% of consumers (by frequency) drive 60%+ of total category value
-- **Seasonality indicators:** Survey suggests higher consumption in summer months (social/outdoor occasions)
+**Frequency Breakdown (n=238 who tried):**
+- Yearly: 104 respondents (43.7%)
+- Monthly: 105 respondents (44.1%)
+- Weekly: 28 respondents (11.8%)
+- Daily: 1 respondent (0.4%)
 
-**Business Metric:**
-- **Annual purchase baseline:** 13.4 times/year = 1.1 times/month average
-- **Frequency tiers:**
-  - Heavy users (weekly+): 10% of consumers, 30% of value
-  - Regular users (monthly): 38% of consumers, 50% of value
-  - Light users (yearly): 52% of consumers, 20% of value
-- **Retention opportunity:** Converting light → regular users doubles LTV (¥282 → ¥564)
+**Gender Frequency Gap:**
+- Male: 18.2 purchases/year average
+- Female: 10.5 purchases/year average
+- Male frequency is 1.7x higher
 
-**What This Means:**
-Rather than treating all consumers equally, segment by frequency: heavy users (loyalty programs, variety packs), regular users (maintain engagement), light users (trial conversion campaigns). Male consumers' 62% higher frequency explains their 2x spend—this is a frequency issue, not a price issue.
+**Implication:** Male consumers' 2x higher annual spend is driven by purchase frequency (18.2 vs 10.5 times/year), not by higher spending per occasion. Frequency-based segmentation may be more relevant than demographic segmentation for retention strategies.
 
 ---
 
-### 4.7 Wine-Based Positioning Validation
+### 4.8 Age Distribution & Target Focus
 
-**Key Metric:** Unvalidated assumption requiring market testing
+**Visualization:** *Demographics - Age*
 
-**Findings:**
-- **Alcohol base concern:** Survey did not explicitly test wine vs malt preference in blind format, limiting validation of core positioning hypothesis
-- **Gender premium minimal:** Female segment shows only 2.8% higher price tolerance (¥12.80 vs ¥12.45), suggesting wine-based "sophistication" messaging may not drive incremental willingness-to-pay
-- **Category blind spots:** Consumers may not differentiate alcohol bases in flavored/carbonated formats (requires blind taste testing validation)
-- **Competitive intelligence:** High Noon (vodka-based, launched 2019) outperformed wine-based seltzers in North America by 2023, suggesting alcohol base is not primary purchase driver
+**Key Finding:** 64% of sample aged 21-30, with 46% concentrated in 21-25 age bracket.
 
-**Strategic Implication:**
+**Age Distribution:**
+- 18-20: ~8%
+- 21-25: ~46% (largest group)
+- 26-30: ~18%
+- 31-35: ~12%
+- 36-40: ~5%
+- 41-45: ~6%
+- 45-50: ~4%
+- 51+: ~3%
 
-⚠️ **High-risk assumption:** Wine-based differentiation is **unproven and potentially ineffective**—survey did not test consumer preference for wine vs malt/vodka bases.
+**Combined 21-30:** 64% of sample (175/273 respondents)
 
-**Recommended pivot:** Lead with **tangible, testable benefits** rather than unvalidated wine-base claims:
-- ✅ Glass packaging (72% preference, verifiable)
-- ✅ Natural ingredients (can be validated through ingredients list)
-- ✅ Lower sugar/calories (measurable, health-conscious positioning)
-- ✅ Premium quality (supported by international brand equity)
-- ⚠️ Wine heritage (unvalidated, requires blind taste testing)
-
-**Required validation before heavy investment:**
-1. Blind taste test: Wine-labeled vs unlabeled vs vodka-based (n=200+)
-2. A/B messaging test: Wine heritage vs natural ingredients positioning
-3. Price premium test: Does wine-base justify higher price vs malt alternatives?
-
-**Fallback strategy:** If wine-base shows no consumer preference, Gallo's competitive advantage lies in distribution strength, brand equity, and production scale—not product composition. Pivot messaging to "premium ingredients" and "international quality standards."
+**Implication:** Strong concentration in 21-30 age range validates this as primary target demographic. Drop-off after age 30 suggests focusing marketing resources on millennial consumers rather than broader age spectrum.
 
 ---
+
+### 4.9 Wine-Base Positioning - Data Limitation
+
+**Key Finding:** Survey did not test consumer preference for wine-based vs malt-based vs vodka-based hard seltzers in blind format.
+
+**Available Data:**
+- Gender price parity: Female ¥12.80 vs Male ¥12.45 (only 2.8% premium)
+- No direct questions about alcohol base preferences
+- No blind taste testing conducted
+
+**Data Gap:** Core product differentiation hypothesis (wine-base as premium positioning) is **unvalidated** by this dataset.
+
+**Implication:** Wine-base positioning should be validated through additional research (blind taste tests, A/B messaging studies) before committing significant marketing investment. Focus messaging on tangible, verifiable benefits: glass packaging (72% preference documented), natural ingredients, and premium quality attributes.
+
 
 ## 5. Strategic Recommendations
 
