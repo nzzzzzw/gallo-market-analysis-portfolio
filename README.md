@@ -5,8 +5,6 @@
   <h1>📖 About This Project</h1>
 </div>
 
----
-
 ## 1. Background and Overview
 
 In Fall 2020, **E. & J. Gallo Winery**—the world's largest family-owned winery with 90+ brands including Barefoot, Apothic, and Dark Horse—faced a strategic challenge: **declining wine consumption among Millennials and Gen Z**, driven by the explosive growth of hard seltzers (200-300% annual growth, $4-5B market size). Gallo had launched **Barefoot Hard Seltzer** (the only wine-based seltzer in market) but needed data-driven insights to compete with category leaders like White Claw (60% market share) and Truly (25% share).
@@ -134,8 +132,6 @@ This portfolio transforms the 2020 Excel-based analysis to demonstrate professio
 - [Original Survey Questionnaire →](/data/raw/低酒精饮料偏好调查.xlsx)
 
 </details>
-
----
 
 ## 2. Data Structure Overview
 
@@ -367,9 +363,6 @@ After data cleaning and transformation, the following structured datasets were c
 </details>
 
 
-
----
-
 ## 3. Executive Summary
 
 ### Overview of Findings
@@ -416,8 +409,6 @@ The interactive dashboard contains **9 visualizations** organized into three the
 - Annotations highlighting critical insights
 - Consistent brand color palette throughout
 - Mobile-responsive design -->
-
----
 
 ## 4. Insights Deep Dive
 
