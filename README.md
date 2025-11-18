@@ -1,8 +1,6 @@
 
 <div align="center">
-  <img src="assets/images/barefoot-logo.svg" alt="Barefoot Wine Logo" width="300"/>
-  
-  <h1>📖 About This Project</h1>
+  <img src="assets/images/barefoot-logo.svg" alt="Barefoot Wine Logo" width="300"/> <h2>📖 About This Project</h2>
 </div>
 
 ## 1. Background and Overview
