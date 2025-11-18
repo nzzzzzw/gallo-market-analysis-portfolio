@@ -407,7 +407,7 @@ Survey did not test wine-base vs malt-base consumer preference. Wine-base positi
 
 **Visualization:** *Behavior - Channels*
 <div align="center">
-  <img src="assets/images/Behavior - Channels.png"  width="400"> 
+  <img src="assets/images/Behavior - Channels.png"> 
 </div>
 
 **Key Finding:** 85% convenience store preference (233/273 respondents), followed by 76% supermarkets (206/273) and 46% e-commerce (126/273).
@@ -448,7 +448,7 @@ Survey did not test wine-base vs malt-base consumer preference. Wine-base positi
 
 **Visualizations:** *Demographics - Gender, Demographics - Age, Behavior - Spend*
 <div align="center">
-  <img src="assets/images/Demographics - Gender.png"  width="400"> 
+  <img src="assets/images/Demographics - Gender.png"> 
 </div>
 <div align="center">
   <img src="assets/images/Demographics - Age.png"> 
@@ -534,7 +534,7 @@ Survey did not test wine-base vs malt-base consumer preference. Wine-base positi
 
 **Visualization:** *Behavior - Frequency*
 <div align="center">
-  <img src="assets/images/Behavior - Frequency.png"  width="400"> 
+  <img src="assets/images/Behavior - Frequency.png"> 
 </div>
 
 
