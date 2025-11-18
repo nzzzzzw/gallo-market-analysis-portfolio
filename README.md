@@ -1,4 +1,9 @@
-# 📖 About This Project
+
+<div align="center">
+  <img src="assets/images/barefoot-logo.svg" alt="Barefoot Wine Logo" width="300"/>
+  
+  <h1>📖 About This Project</h1>
+</div>
 
 ---
 
@@ -63,7 +68,7 @@ Student teams presented in December 2020, proposing both **actionable strategies
 **Analysis Phase:**
 - Conducted Excel data analysis (pivot tables, segmentation)
 - Performed descriptive statistics and developed consumer insights
-- Created visualizations for presentation
+- Created visualizations for presentation (PPT)
 
 **Strategy Phase:**
 - Developed target segment profiles
@@ -85,14 +90,14 @@ This portfolio transforms the 2020 Excel-based analysis to demonstrate professio
 
 **Technical Evolution:**
 - **2020:** Excel pivot tables, PowerPoint charts
-- **2025:** SQL data preparation, Tableau interactive dashboard, GitHub version control
+- **2025:** SQL/Python data preparation and analysis, Tableau interactive dashboard, GitHub version control
 
 **Skills Demonstrated:**
-- Data cleaning and transformation (SQL/SQLite)
+- Data cleaning and transformation (Python/SQLite)
 - Interactive visualization design (Tableau)
 - Consumer insights → business metrics translation
 - Statistical analysis and segmentation
-- Professional documentation and version control
+- github documentation and version control
 
 **Key Improvements:**
 - Revised segmentation strategy based on deeper SQL analysis (gender-neutral targeting)
@@ -103,7 +108,7 @@ This portfolio transforms the 2020 Excel-based analysis to demonstrate professio
 
 **Deliverables:**
 - Interactive Tableau dashboard (9 visualizations across 3 themes)
-- SQL queries for data cleaning and segmentation
+- SQL/Python queries for data cleaning and segmentation
 - Written strategic recommendations report
 - Comprehensive markdown documentation
 
@@ -113,24 +118,20 @@ This portfolio transforms the 2020 Excel-based analysis to demonstrate professio
 <summary><b>📊 Quick Links for Project Documentation →</b></summary>
 
 **Interactive Dashboard:**
-- [Consumer Insights Dashboard (Tableau Public) →](placeholder_tableau_public_link)  
+- [Consumer Insights (Tableau Book) →](/visualizations/barefoot-hard-seltzer-market-analysis.twb)  
   *9 interactive visualizations: Demographics | Preferences | Behavior*
 
-**Analysis & Strategy:**
-- [Strategic Recommendations Report →](./STRATEGIC_RECOMMENDATIONS.md)  
-  *Market sizing, targeting, channel strategy, implementation roadmap*
-
 **Technical Documentation:**
-- [SQL Data Preparation Queries →](./SQL_QUERIES.md)  
+- [SQL/Python Data Preparation & Analysis Queries →](/scripts/)  
   *Data cleaning, transformation, calculated fields*
-- [Data Dictionary →](./DATA_DICTIONARY.md)  
+- [Data Dictionary →](#2-data-structure-overview)  
   *Complete variable definitions and data structure*
-- [Methodology →](./METHODOLOGY.md)  
-  *Survey design, analytical frameworks, validation approach*
+- [Methodology →](#6-methodology--frameworks)  
+  *analytical frameworks*
 
 **Original Project Materials:**
-- [2020 Winning Presentation (PDF) →](./archive/GCP25_Barefoot_FinalReport.pdf)
-- [Original Survey Questionnaire →](./archive/Survey_Questionnaire.pdf)
+- [2020 Presentation (PDF) →](/archive/20201130_GCP25_Gallo_Presentation.pdf)
+- [Original Survey Questionnaire →](/data/raw/低酒精饮料偏好调查.xlsx)
 
 </details>
 

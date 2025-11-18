@@ -1,0 +1,3171 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='Book1_17634060982560' path='/workbooks' revision='1.3' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='flavor_summary' inline='true' name='federated.1k36hp21d559lm18reo6v0r0cxxe' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='flavor_summary' name='textscan.1fbe0510lrf7081d75vo50my0fjg'>
+            <connection class='textscan' directory='/Users/niko/Downloads/output_csvs' filename='flavor_summary.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1fbe0510lrf7081d75vo50my0fjg' name='flavor_summary.csv' table='[flavor_summary#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='flavor' ordinal='0' />
+            <column datatype='real' name='selections' ordinal='1' />
+            <column datatype='real' name='pct' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[flavor_summary.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flavor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[flavor]</local-name>
+            <parent-name>[flavor_summary.csv]</parent-name>
+            <remote-alias>flavor</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[flavor_summary.csv_46FC3E44B96745CCBD05A622E0C33C85]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>selections</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[selections]</local-name>
+            <parent-name>[flavor_summary.csv]</parent-name>
+            <remote-alias>selections</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[flavor_summary.csv_46FC3E44B96745CCBD05A622E0C33C85]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct]</local-name>
+            <parent-name>[flavor_summary.csv]</parent-name>
+            <remote-alias>pct</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[flavor_summary.csv_46FC3E44B96745CCBD05A622E0C33C85]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='flavor_summary.csv' datatype='table' name='[__tableau_internal_object_id__].[flavor_summary.csv_46FC3E44B96745CCBD05A622E0C33C85]' role='measure' type='quantitative' />
+      <column caption='Flavor' datatype='string' name='[flavor]' role='dimension' type='nominal' />
+      <column caption='Pct' datatype='real' name='[pct]' role='measure' type='quantitative' />
+      <column caption='Selections' datatype='real' name='[selections]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/rs/8c0qgc4n2wq_zm_plv_5rl1r0000gn/T/tableau-temp/#TableauTemp_09rzsa91mu7euj14b9xx71ko89nl.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>flavor</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[flavor]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>flavor</remote-alias>
+              <ordinal>0</ordinal>
+              <family>flavor_summary.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>selections</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[selections]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>selections</remote-alias>
+              <ordinal>1</ordinal>
+              <family>flavor_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pct</remote-alias>
+              <ordinal>2</ordinal>
+              <family>flavor_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='flavor_summary.csv' id='flavor_summary.csv_46FC3E44B96745CCBD05A622E0C33C85'>
+            <properties context=''>
+              <relation connection='textscan.1fbe0510lrf7081d75vo50my0fjg' name='flavor_summary.csv' table='[flavor_summary#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='string' name='flavor' ordinal='0' />
+                  <column datatype='real' name='selections' ordinal='1' />
+                  <column datatype='real' name='pct' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='channel_summary' inline='true' name='federated.10j5yo00ble4j813dlnft1moe6zh' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='channel_summary' name='textscan.0f19utn1o7vhgu1dcyqs00ej0bc8'>
+            <connection class='textscan' directory='/Users/niko/Downloads/output_csvs' filename='channel_summary.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0f19utn1o7vhgu1dcyqs00ej0bc8' name='channel_summary.csv' table='[channel_summary#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='channel' ordinal='0' />
+            <column datatype='integer' name='selections' ordinal='1' />
+            <column datatype='real' name='penetration_pct' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[channel_summary.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>channel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[channel]</local-name>
+            <parent-name>[channel_summary.csv]</parent-name>
+            <remote-alias>channel</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[channel_summary.csv_D8F5F15B8BA64A099AB0AEB89F0624EA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>selections</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[selections]</local-name>
+            <parent-name>[channel_summary.csv]</parent-name>
+            <remote-alias>selections</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[channel_summary.csv_D8F5F15B8BA64A099AB0AEB89F0624EA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>penetration_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[penetration_pct]</local-name>
+            <parent-name>[channel_summary.csv]</parent-name>
+            <remote-alias>penetration_pct</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[channel_summary.csv_D8F5F15B8BA64A099AB0AEB89F0624EA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='channel_summary.csv' datatype='table' name='[__tableau_internal_object_id__].[channel_summary.csv_D8F5F15B8BA64A099AB0AEB89F0624EA]' role='measure' type='quantitative' />
+      <column caption='Channel' datatype='string' name='[channel]' role='dimension' type='nominal' />
+      <column caption='Penetration Pct' datatype='real' name='[penetration_pct]' role='measure' type='quantitative' />
+      <column caption='Selections' datatype='integer' name='[selections]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/rs/8c0qgc4n2wq_zm_plv_5rl1r0000gn/T/tableau-temp/#TableauTemp_0318kaf08vdjvq12t5brg0p0xv0n.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/17/2025 08:23:02 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>channel</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[channel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>channel</remote-alias>
+              <ordinal>0</ordinal>
+              <family>channel_summary.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>selections</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[selections]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>selections</remote-alias>
+              <ordinal>1</ordinal>
+              <family>channel_summary.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>penetration_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[penetration_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>penetration_pct</remote-alias>
+              <ordinal>2</ordinal>
+              <family>channel_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='channel_summary.csv' id='channel_summary.csv_D8F5F15B8BA64A099AB0AEB89F0624EA'>
+            <properties context=''>
+              <relation connection='textscan.0f19utn1o7vhgu1dcyqs00ej0bc8' name='channel_summary.csv' table='[channel_summary#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='string' name='channel' ordinal='0' />
+                  <column datatype='integer' name='selections' ordinal='1' />
+                  <column datatype='real' name='penetration_pct' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='survey_clean' inline='true' name='federated.073xpsf0utt7n41e9z0p50bj8t89' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='survey_clean' name='textscan.0gjjyxe1lc1qhp13dooml08uxqc8'>
+            <connection class='textscan' directory='/Users/niko/Downloads/output_csvs' filename='survey_clean.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='channel_summary' name='textscan.145t9oj0h99esn1gs0pi51dt7mqy'>
+            <connection class='textscan' directory='/Users/niko/Downloads/output_csvs' filename='channel_summary.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='flavor_summary' name='textscan.1fy0yno1smbtuy16zs3ra05z8o5g'>
+            <connection class='textscan' directory='/Users/niko/Downloads/output_csvs' filename='flavor_summary.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='gender_comparison' name='textscan.003ck7g0qzsywc1exbuxa0gmd5yi'>
+            <connection class='textscan' directory='/Users/niko/Downloads/output_csvs' filename='gender_comparison.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='segment_summary' name='textscan.1baapzm1sm7oj311dwn0z0l7dobm'>
+            <connection class='textscan' directory='/Users/niko/Downloads/output_csvs' filename='segment_summary.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0gjjyxe1lc1qhp13dooml08uxqc8' name='survey_clean.csv' table='[survey_clean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='response_id' ordinal='0' />
+            <column datatype='string' name='gender' ordinal='1' />
+            <column datatype='string' name='age_group' ordinal='2' />
+            <column datatype='integer' name='age_code' ordinal='3' />
+            <column datatype='string' name='city_tier' ordinal='4' />
+            <column datatype='string' name='preferred_abv' ordinal='5' />
+            <column datatype='string' name='tried_hard_seltzer' ordinal='6' />
+            <column datatype='string' name='willing_to_try' ordinal='7' />
+            <column datatype='string' name='purchase_frequency' ordinal='8' />
+            <column datatype='real' name='frequency_code' ordinal='9' />
+            <column datatype='integer' name='glass_bottle' ordinal='10' />
+            <column datatype='integer' name='metal_can' ordinal='11' />
+            <column datatype='integer' name='plastic_bottle' ordinal='12' />
+            <column datatype='string' name='price_range' ordinal='13' />
+            <column datatype='integer' name='price_code' ordinal='14' />
+            <column datatype='integer' name='channel_convenience' ordinal='15' />
+            <column datatype='integer' name='channel_supermarket' ordinal='16' />
+            <column datatype='integer' name='channel_fresh_platform' ordinal='17' />
+            <column datatype='integer' name='channel_ecommerce' ordinal='18' />
+            <column datatype='integer' name='channel_brand_website' ordinal='19' />
+            <column datatype='integer' name='channel_other' ordinal='20' />
+            <column datatype='real' name='brand_rio' ordinal='21' />
+            <column datatype='real' name='brand_horoyoi' ordinal='22' />
+            <column datatype='real' name='brand_chill' ordinal='23' />
+            <column datatype='real' name='brand_other' ordinal='24' />
+            <column datatype='real' name='flavor_apple_pear_peach' ordinal='25' />
+            <column datatype='real' name='flavor_grape_cherry_blueberry' ordinal='26' />
+            <column datatype='real' name='flavor_mango_pineapple_passion' ordinal='27' />
+            <column datatype='real' name='flavor_lemon_grapefruit_orange' ordinal='28' />
+            <column datatype='real' name='flavor_other_fruit' ordinal='29' />
+            <column datatype='real' name='flavor_tea' ordinal='30' />
+            <column datatype='string' name='age_category' ordinal='31' />
+            <column datatype='integer' name='is_target_age' ordinal='32' />
+            <column datatype='string' name='city_type' ordinal='33' />
+            <column datatype='real' name='price_midpoint' ordinal='34' />
+            <column datatype='real' name='annual_purchases' ordinal='35' />
+            <column datatype='real' name='annual_spend' ordinal='36' />
+            <column datatype='real' name='ltv_3year' ordinal='37' />
+            <column datatype='integer' name='is_premium_segment' ordinal='38' />
+            <column datatype='integer' name='is_heavy_user' ordinal='39' />
+            <column datatype='string' name='frequency_category' ordinal='40' />
+            <column datatype='string' name='price_segment' ordinal='41' />
+            <column datatype='string' name='primary_packaging' ordinal='42' />
+            <column datatype='integer' name='is_primary_target' ordinal='43' />
+            <column datatype='integer' name='is_high_value_segment' ordinal='44' />
+            <column datatype='string' name='gender_target_segment' ordinal='45' />
+            <column datatype='string' name='customer_value_tier' ordinal='46' />
+            <column datatype='string' name='strategic_segment' ordinal='47' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[response_id]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>response_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age_group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[age_group]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>age_group</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age_code]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>age_code</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city_tier</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city_tier]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>city_tier</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>preferred_abv</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[preferred_abv]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>preferred_abv</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tried_hard_seltzer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tried_hard_seltzer]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>tried_hard_seltzer</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>willing_to_try</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[willing_to_try]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>willing_to_try</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>purchase_frequency</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[purchase_frequency]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>purchase_frequency</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>frequency_code</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[frequency_code]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>frequency_code</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>glass_bottle</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[glass_bottle]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>glass_bottle</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>metal_can</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[metal_can]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>metal_can</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>plastic_bottle</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[plastic_bottle]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>plastic_bottle</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price_range</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[price_range]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>price_range</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[price_code]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>price_code</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>channel_convenience</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[channel_convenience]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>channel_convenience</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>channel_supermarket</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[channel_supermarket]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>channel_supermarket</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>channel_fresh_platform</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[channel_fresh_platform]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>channel_fresh_platform</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>channel_ecommerce</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[channel_ecommerce]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>channel_ecommerce</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>channel_brand_website</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[channel_brand_website]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>channel_brand_website</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>channel_other</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[channel_other]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>channel_other</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>brand_rio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[brand_rio]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>brand_rio</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>brand_horoyoi</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[brand_horoyoi]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>brand_horoyoi</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>brand_chill</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[brand_chill]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>brand_chill</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>brand_other</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[brand_other]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>brand_other</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flavor_apple_pear_peach</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[flavor_apple_pear_peach]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>flavor_apple_pear_peach</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flavor_grape_cherry_blueberry</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[flavor_grape_cherry_blueberry]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>flavor_grape_cherry_blueberry</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flavor_mango_pineapple_passion</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[flavor_mango_pineapple_passion]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>flavor_mango_pineapple_passion</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flavor_lemon_grapefruit_orange</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[flavor_lemon_grapefruit_orange]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>flavor_lemon_grapefruit_orange</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flavor_other_fruit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[flavor_other_fruit]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>flavor_other_fruit</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flavor_tea</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[flavor_tea]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>flavor_tea</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[age_category]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>age_category</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_target_age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_target_age]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>is_target_age</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city_type]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>city_type</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price_midpoint</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price_midpoint]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>price_midpoint</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>annual_purchases</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[annual_purchases]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>annual_purchases</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>annual_spend</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[annual_spend]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>annual_spend</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ltv_3year</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ltv_3year]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>ltv_3year</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_premium_segment</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_premium_segment]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>is_premium_segment</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_heavy_user</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_heavy_user]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>is_heavy_user</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>frequency_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[frequency_category]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>frequency_category</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price_segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[price_segment]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>price_segment</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>primary_packaging</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[primary_packaging]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>primary_packaging</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_primary_target</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_primary_target]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>is_primary_target</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_high_value_segment</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_high_value_segment]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>is_high_value_segment</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender_target_segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender_target_segment]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>gender_target_segment</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_value_tier</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_value_tier]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>customer_value_tier</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>strategic_segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[strategic_segment]</local-name>
+            <parent-name>[survey_clean.csv]</parent-name>
+            <remote-alias>strategic_segment</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' caption='Annual Spend (bin)' datatype='integer' name='[Annual Spend (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='3' formula='[annual_spend]' peg='0' size='1050' />
+      </column>
+      <column caption='Segment Label' datatype='string' name='[Calculation_5286733388331057152]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [gender] = &quot;Female&quot; AND [age_code] IN (2, 3) AND [tried_hard_seltzer] = &quot;Yes&quot; THEN&#10;    &quot;Female 21-30\n(High Volume)&quot;&#10;ELSEIF [gender] = &quot;Male&quot; AND [age_code] IN (2, 3) AND [tried_hard_seltzer] = &quot;Yes&quot; THEN&#10;    &quot;Male 21-30\n(High Value)&quot;&#10;ELSEIF [age_code] IN (2, 3) AND [tried_hard_seltzer] = &quot;Yes&quot; THEN&#10;    &quot;Other 21-30&quot;&#10;ELSEIF [age_code] IN (2, 3) THEN&#10;    &quot;Age 21-30\n(Not Tried)&quot;&#10;ELSE&#10;    &quot;Other Segments&quot;&#10;END' />
+      </column>
+      <column caption='Target Flag' datatype='boolean' name='[Calculation_5286733388331241473]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[age_code] IN (2, 3) AND [tried_hard_seltzer] = &quot;Yes&quot;' />
+      </column>
+      <column caption='Total Channels Selected' datatype='integer' name='[Calculation_5286733388331384834]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[channel_convenience] + &#10;[channel_supermarket] + &#10;[channel_fresh_platform] + &#10;[channel_ecommerce] + &#10;[channel_brand_website]' />
+      </column>
+      <column caption='Price Category' datatype='string' name='[Calculation_5286733388331491331]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [price_code] IN (1, 2) THEN &quot;Mass Market\n(¥0-10)&quot;&#10;ELSEIF [price_code] = 3 THEN &quot;Mid-Premium\n(¥10-15)&quot;&#10;ELSEIF [price_code] IN (4, 5) THEN &quot;Premium\n(¥15+)&quot;&#10;ELSE &quot;Unknown&quot;&#10;END' />
+      </column>
+      <column caption='Spend Tier' datatype='string' name='[Calculation_5286733388331589636]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [annual_spend] &gt;= 300 THEN &quot;High Value\n(¥300+)&quot;&#10;ELSEIF [annual_spend] &gt;= 150 THEN &quot;Medium Value\n(¥150-300)&quot;&#10;ELSEIF [annual_spend] &gt;= 50 THEN &quot;Low Value\n(¥50-150)&quot;&#10;ELSE &quot;Very Low\n(&lt;¥50)&quot;&#10;END' />
+      </column>
+      <column caption='Gender Display' datatype='real' name='[Calculation_5286733388331634693]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[gender] + &quot; (&quot; + STR(COUNTD([response_id])) + &quot;)&quot;' />
+      </column>
+      <column caption='Segment Label (Clean)' datatype='string' name='[Calculation_6766095497541324802]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [gender] = &quot;Female&quot; AND [age_code] IN (2, 3) AND [tried_hard_seltzer] = &quot;Yes&quot; THEN&#10;    &quot;Female 21-30\n(High Volume)&quot;&#10;ELSEIF [gender] = &quot;Male&quot; AND [age_code] IN (2, 3) AND [tried_hard_seltzer] = &quot;Yes&quot; THEN&#10;    &quot;Male 21-30\n(High Value)&quot;&#10;ELSEIF [age_code] IN (2, 3) AND [tried_hard_seltzer] = &quot;Yes&quot; THEN&#10;    &quot;Other 21-30&quot;&#10;ELSEIF [age_code] IN (2, 3) THEN&#10;    &quot;Age 21-30\n(Not Tried)&quot;&#10;ELSE&#10;    &quot;Other Segments&quot;&#10;END' />
+        <aliases>
+          <alias key='&quot;Age 21-30\\n(Not Tried)&quot;' value='Age 21-30  Not Tried' />
+          <alias key='&quot;Female 21-30\\n(High Volume)&quot;' value='Female 21-30 &amp; High Volume' />
+          <alias key='&quot;Male 21-30\\n(High Value)&quot;' value='Male 21-30 &amp; High Value' />
+        </aliases>
+      </column>
+      <column caption='Glass' datatype='integer' name='[Calculation_6836745716700774401]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([glass_bottle])' />
+      </column>
+      <column caption='Can' datatype='integer' name='[Calculation_6836745716700934146]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([metal_can])' />
+      </column>
+      <column caption='Plastic' datatype='integer' name='[Calculation_6836745716700999683]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([plastic_bottle])' />
+      </column>
+      <column caption='survey_clean.csv' datatype='table' name='[__tableau_internal_object_id__].[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]' role='measure' type='quantitative' />
+      <column caption='Age Category' datatype='string' name='[age_category]' role='dimension' type='nominal' />
+      <column caption='Age Code' datatype='integer' name='[age_code]' role='dimension' type='ordinal' />
+      <column caption='Age Group' datatype='string' name='[age_group]' role='dimension' type='nominal' />
+      <column caption='Annual Purchases' datatype='real' name='[annual_purchases]' role='measure' type='quantitative' />
+      <column caption='Annual Spend' datatype='real' name='[annual_spend]' role='measure' type='quantitative' />
+      <column caption='Brand Chill' datatype='real' name='[brand_chill]' role='measure' type='quantitative' />
+      <column caption='Brand Horoyoi' datatype='real' name='[brand_horoyoi]' role='measure' type='quantitative' />
+      <column caption='Brand Other' datatype='real' name='[brand_other]' role='measure' type='quantitative' />
+      <column caption='Brand Rio' datatype='real' name='[brand_rio]' role='measure' type='quantitative' />
+      <column caption='Channel Brand Website' datatype='integer' name='[channel_brand_website]' role='measure' type='quantitative' />
+      <column caption='Channel Convenience' datatype='integer' name='[channel_convenience]' role='measure' type='quantitative' />
+      <column caption='Channel Ecommerce' datatype='integer' name='[channel_ecommerce]' role='measure' type='quantitative' />
+      <column caption='Channel Fresh Platform' datatype='integer' name='[channel_fresh_platform]' role='measure' type='quantitative' />
+      <column caption='Channel Other' datatype='integer' name='[channel_other]' role='measure' type='quantitative' />
+      <column caption='Channel Supermarket' datatype='integer' name='[channel_supermarket]' role='measure' type='quantitative' />
+      <column caption='City Tier' datatype='string' name='[city_tier]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='City Type' datatype='string' name='[city_type]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Customer Value Tier' datatype='string' name='[customer_value_tier]' role='dimension' type='nominal' />
+      <column caption='Flavor Apple Pear Peach' datatype='real' name='[flavor_apple_pear_peach]' role='measure' type='quantitative' />
+      <column caption='Flavor Grape Cherry Blueberry' datatype='real' name='[flavor_grape_cherry_blueberry]' role='measure' type='quantitative' />
+      <column caption='Flavor Lemon Grapefruit Orange' datatype='real' name='[flavor_lemon_grapefruit_orange]' role='measure' type='quantitative' />
+      <column caption='Flavor Mango Pineapple Passion' datatype='real' name='[flavor_mango_pineapple_passion]' role='measure' type='quantitative' />
+      <column caption='Flavor Other Fruit' datatype='real' name='[flavor_other_fruit]' role='measure' type='quantitative' />
+      <column caption='Flavor Tea' datatype='real' name='[flavor_tea]' role='measure' type='quantitative' />
+      <column caption='Frequency Category' datatype='string' name='[frequency_category]' role='dimension' type='nominal' />
+      <column caption='Frequency Code' datatype='real' name='[frequency_code]' role='dimension' type='ordinal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Gender Target Segment' datatype='string' name='[gender_target_segment]' role='dimension' type='nominal' />
+      <column caption='Glass Bottle' datatype='integer' name='[glass_bottle]' role='measure' type='quantitative' />
+      <column caption='Is Heavy User' datatype='integer' name='[is_heavy_user]' role='measure' type='quantitative' />
+      <column caption='Is High Value Segment' datatype='integer' name='[is_high_value_segment]' role='measure' type='quantitative' />
+      <column caption='Is Premium Segment' datatype='integer' name='[is_premium_segment]' role='measure' type='quantitative' />
+      <column caption='Is Primary Target' datatype='integer' name='[is_primary_target]' role='measure' type='quantitative' />
+      <column caption='Is Target Age' datatype='integer' name='[is_target_age]' role='measure' type='quantitative' />
+      <column caption='Ltv 3Year' datatype='real' name='[ltv_3year]' role='dimension' type='quantitative' />
+      <column caption='Metal Can' datatype='integer' name='[metal_can]' role='measure' type='quantitative' />
+      <column caption='Plastic Bottle' datatype='integer' name='[plastic_bottle]' role='measure' type='quantitative' />
+      <column caption='Preferred Abv' datatype='string' name='[preferred_abv]' role='dimension' type='nominal' />
+      <column caption='Price Code' datatype='integer' name='[price_code]' role='dimension' type='ordinal' />
+      <column caption='Price Midpoint' datatype='real' name='[price_midpoint]' role='measure' type='quantitative' />
+      <column caption='Price Range' datatype='string' name='[price_range]' role='dimension' type='nominal' />
+      <column caption='Price Segment' datatype='string' name='[price_segment]' role='dimension' type='nominal' />
+      <column caption='Primary Packaging' datatype='string' name='[primary_packaging]' role='dimension' type='nominal' />
+      <column caption='Purchase Frequency' datatype='string' name='[purchase_frequency]' role='dimension' type='nominal' />
+      <column caption='Response Id' datatype='integer' name='[response_id]' role='dimension' type='ordinal' />
+      <column caption='Strategic Segment' datatype='string' name='[strategic_segment]' role='dimension' type='nominal' />
+      <column caption='Tried Hard Seltzer' datatype='string' name='[tried_hard_seltzer]' role='dimension' type='nominal' />
+      <column caption='Willing To Try' datatype='string' name='[willing_to_try]' role='dimension' type='nominal' />
+      <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+      <column-instance column='[tried_hard_seltzer]' derivation='None' name='[none:tried_hard_seltzer:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_6836745716700774401]' derivation='User' name='[usr:Calculation_6836745716700774401:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_6836745716700934146]' derivation='User' name='[usr:Calculation_6836745716700934146:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_6836745716700999683]' derivation='User' name='[usr:Calculation_6836745716700999683:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/rs/8c0qgc4n2wq_zm_plv_5rl1r0000gn/T/tableau-temp/#TableauTemp_098y93z0jz8ljq1dlk36v0s66hel.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/17/2025 08:23:08 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>response_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[response_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>273</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>1</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age_group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[age_group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age_group</remote-alias>
+              <ordinal>2</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age_code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[age_code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age_code</remote-alias>
+              <ordinal>3</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>city_tier</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[city_tier]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>city_tier</remote-alias>
+              <ordinal>4</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>preferred_abv</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[preferred_abv]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>preferred_abv</remote-alias>
+              <ordinal>5</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tried_hard_seltzer</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tried_hard_seltzer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tried_hard_seltzer</remote-alias>
+              <ordinal>6</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>willing_to_try</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[willing_to_try]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>willing_to_try</remote-alias>
+              <ordinal>7</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>purchase_frequency</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[purchase_frequency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>purchase_frequency</remote-alias>
+              <ordinal>8</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>frequency_code</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[frequency_code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>frequency_code</remote-alias>
+              <ordinal>9</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>glass_bottle</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[glass_bottle]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>glass_bottle</remote-alias>
+              <ordinal>10</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>metal_can</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[metal_can]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>metal_can</remote-alias>
+              <ordinal>11</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>plastic_bottle</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[plastic_bottle]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>plastic_bottle</remote-alias>
+              <ordinal>12</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price_range</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[price_range]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>price_range</remote-alias>
+              <ordinal>13</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price_code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[price_code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>price_code</remote-alias>
+              <ordinal>14</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>channel_convenience</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[channel_convenience]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>channel_convenience</remote-alias>
+              <ordinal>15</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>channel_supermarket</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[channel_supermarket]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>channel_supermarket</remote-alias>
+              <ordinal>16</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>channel_fresh_platform</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[channel_fresh_platform]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>channel_fresh_platform</remote-alias>
+              <ordinal>17</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>channel_ecommerce</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[channel_ecommerce]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>channel_ecommerce</remote-alias>
+              <ordinal>18</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>channel_brand_website</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[channel_brand_website]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>channel_brand_website</remote-alias>
+              <ordinal>19</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>channel_other</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[channel_other]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>channel_other</remote-alias>
+              <ordinal>20</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>brand_rio</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[brand_rio]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>brand_rio</remote-alias>
+              <ordinal>21</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>brand_horoyoi</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[brand_horoyoi]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>brand_horoyoi</remote-alias>
+              <ordinal>22</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>brand_chill</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[brand_chill]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>brand_chill</remote-alias>
+              <ordinal>23</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>brand_other</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[brand_other]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>brand_other</remote-alias>
+              <ordinal>24</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>flavor_apple_pear_peach</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[flavor_apple_pear_peach]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>flavor_apple_pear_peach</remote-alias>
+              <ordinal>25</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>flavor_grape_cherry_blueberry</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[flavor_grape_cherry_blueberry]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>flavor_grape_cherry_blueberry</remote-alias>
+              <ordinal>26</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>flavor_mango_pineapple_passion</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[flavor_mango_pineapple_passion]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>flavor_mango_pineapple_passion</remote-alias>
+              <ordinal>27</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>flavor_lemon_grapefruit_orange</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[flavor_lemon_grapefruit_orange]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>flavor_lemon_grapefruit_orange</remote-alias>
+              <ordinal>28</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>flavor_other_fruit</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[flavor_other_fruit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>flavor_other_fruit</remote-alias>
+              <ordinal>29</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>flavor_tea</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[flavor_tea]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>flavor_tea</remote-alias>
+              <ordinal>30</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age_category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[age_category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age_category</remote-alias>
+              <ordinal>31</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_target_age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[is_target_age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_target_age</remote-alias>
+              <ordinal>32</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>city_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[city_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>city_type</remote-alias>
+              <ordinal>33</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price_midpoint</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[price_midpoint]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>price_midpoint</remote-alias>
+              <ordinal>34</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>annual_purchases</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[annual_purchases]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>annual_purchases</remote-alias>
+              <ordinal>35</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>annual_spend</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[annual_spend]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>annual_spend</remote-alias>
+              <ordinal>36</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ltv_3year</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ltv_3year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ltv_3year</remote-alias>
+              <ordinal>37</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_premium_segment</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[is_premium_segment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_premium_segment</remote-alias>
+              <ordinal>38</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_heavy_user</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[is_heavy_user]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_heavy_user</remote-alias>
+              <ordinal>39</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>frequency_category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[frequency_category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>frequency_category</remote-alias>
+              <ordinal>40</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price_segment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[price_segment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>price_segment</remote-alias>
+              <ordinal>41</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>primary_packaging</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[primary_packaging]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>primary_packaging</remote-alias>
+              <ordinal>42</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_primary_target</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[is_primary_target]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_primary_target</remote-alias>
+              <ordinal>43</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_high_value_segment</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[is_high_value_segment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_high_value_segment</remote-alias>
+              <ordinal>44</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender_target_segment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender_target_segment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender_target_segment</remote-alias>
+              <ordinal>45</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_value_tier</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_value_tier]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_value_tier</remote-alias>
+              <ordinal>46</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>strategic_segment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[strategic_segment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>strategic_segment</remote-alias>
+              <ordinal>47</ordinal>
+              <family>survey_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:tried_hard_seltzer:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Yes&quot;</bucket>
+            </map>
+            <map to='#f5f5f5'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.073xpsf0utt7n41e9z0p50bj8t89].[usr:Calculation_6836745716700774401:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.073xpsf0utt7n41e9z0p50bj8t89].[usr:Calculation_6836745716700934146:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.073xpsf0utt7n41e9z0p50bj8t89].[usr:Calculation_6836745716700999683:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='survey_clean.csv' id='survey_clean.csv_1097F8D8F7BA4314B0C880283828F663'>
+            <properties context=''>
+              <relation connection='textscan.0gjjyxe1lc1qhp13dooml08uxqc8' name='survey_clean.csv' table='[survey_clean#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='response_id' ordinal='0' />
+                  <column datatype='string' name='gender' ordinal='1' />
+                  <column datatype='string' name='age_group' ordinal='2' />
+                  <column datatype='integer' name='age_code' ordinal='3' />
+                  <column datatype='string' name='city_tier' ordinal='4' />
+                  <column datatype='string' name='preferred_abv' ordinal='5' />
+                  <column datatype='string' name='tried_hard_seltzer' ordinal='6' />
+                  <column datatype='string' name='willing_to_try' ordinal='7' />
+                  <column datatype='string' name='purchase_frequency' ordinal='8' />
+                  <column datatype='real' name='frequency_code' ordinal='9' />
+                  <column datatype='integer' name='glass_bottle' ordinal='10' />
+                  <column datatype='integer' name='metal_can' ordinal='11' />
+                  <column datatype='integer' name='plastic_bottle' ordinal='12' />
+                  <column datatype='string' name='price_range' ordinal='13' />
+                  <column datatype='integer' name='price_code' ordinal='14' />
+                  <column datatype='integer' name='channel_convenience' ordinal='15' />
+                  <column datatype='integer' name='channel_supermarket' ordinal='16' />
+                  <column datatype='integer' name='channel_fresh_platform' ordinal='17' />
+                  <column datatype='integer' name='channel_ecommerce' ordinal='18' />
+                  <column datatype='integer' name='channel_brand_website' ordinal='19' />
+                  <column datatype='integer' name='channel_other' ordinal='20' />
+                  <column datatype='real' name='brand_rio' ordinal='21' />
+                  <column datatype='real' name='brand_horoyoi' ordinal='22' />
+                  <column datatype='real' name='brand_chill' ordinal='23' />
+                  <column datatype='real' name='brand_other' ordinal='24' />
+                  <column datatype='real' name='flavor_apple_pear_peach' ordinal='25' />
+                  <column datatype='real' name='flavor_grape_cherry_blueberry' ordinal='26' />
+                  <column datatype='real' name='flavor_mango_pineapple_passion' ordinal='27' />
+                  <column datatype='real' name='flavor_lemon_grapefruit_orange' ordinal='28' />
+                  <column datatype='real' name='flavor_other_fruit' ordinal='29' />
+                  <column datatype='real' name='flavor_tea' ordinal='30' />
+                  <column datatype='string' name='age_category' ordinal='31' />
+                  <column datatype='integer' name='is_target_age' ordinal='32' />
+                  <column datatype='string' name='city_type' ordinal='33' />
+                  <column datatype='real' name='price_midpoint' ordinal='34' />
+                  <column datatype='real' name='annual_purchases' ordinal='35' />
+                  <column datatype='real' name='annual_spend' ordinal='36' />
+                  <column datatype='real' name='ltv_3year' ordinal='37' />
+                  <column datatype='integer' name='is_premium_segment' ordinal='38' />
+                  <column datatype='integer' name='is_heavy_user' ordinal='39' />
+                  <column datatype='string' name='frequency_category' ordinal='40' />
+                  <column datatype='string' name='price_segment' ordinal='41' />
+                  <column datatype='string' name='primary_packaging' ordinal='42' />
+                  <column datatype='integer' name='is_primary_target' ordinal='43' />
+                  <column datatype='integer' name='is_high_value_segment' ordinal='44' />
+                  <column datatype='string' name='gender_target_segment' ordinal='45' />
+                  <column datatype='string' name='customer_value_tier' ordinal='46' />
+                  <column datatype='string' name='strategic_segment' ordinal='47' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='segment_summary' inline='true' name='federated.0hbveab12davm210x3uqq0i5gbhz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='segment_summary' name='textscan.1mvz3a50qihasu1azqn530finerw'>
+            <connection class='textscan' directory='/Users/niko/Downloads/output_csvs' filename='segment_summary.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1mvz3a50qihasu1azqn530finerw' name='segment_summary.csv' table='[segment_summary#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='segment' ordinal='0' />
+            <column datatype='integer' name='respondents' ordinal='1' />
+            <column datatype='real' name='pct_of_sample' ordinal='2' />
+            <column datatype='real' name='avg_price' ordinal='3' />
+            <column datatype='real' name='avg_frequency' ordinal='4' />
+            <column datatype='real' name='avg_annual_spend' ordinal='5' />
+            <column datatype='real' name='avg_ltv' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[segment_summary.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[segment]</local-name>
+            <parent-name>[segment_summary.csv]</parent-name>
+            <remote-alias>segment</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[segment_summary.csv_051005A450FA4D79A057F742CB194014]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>respondents</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[respondents]</local-name>
+            <parent-name>[segment_summary.csv]</parent-name>
+            <remote-alias>respondents</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[segment_summary.csv_051005A450FA4D79A057F742CB194014]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pct_of_sample</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_of_sample]</local-name>
+            <parent-name>[segment_summary.csv]</parent-name>
+            <remote-alias>pct_of_sample</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[segment_summary.csv_051005A450FA4D79A057F742CB194014]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_price]</local-name>
+            <parent-name>[segment_summary.csv]</parent-name>
+            <remote-alias>avg_price</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[segment_summary.csv_051005A450FA4D79A057F742CB194014]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_frequency</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_frequency]</local-name>
+            <parent-name>[segment_summary.csv]</parent-name>
+            <remote-alias>avg_frequency</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[segment_summary.csv_051005A450FA4D79A057F742CB194014]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_annual_spend</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_annual_spend]</local-name>
+            <parent-name>[segment_summary.csv]</parent-name>
+            <remote-alias>avg_annual_spend</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[segment_summary.csv_051005A450FA4D79A057F742CB194014]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_ltv</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_ltv]</local-name>
+            <parent-name>[segment_summary.csv]</parent-name>
+            <remote-alias>avg_ltv</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[segment_summary.csv_051005A450FA4D79A057F742CB194014]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='segment_summary.csv' datatype='table' name='[__tableau_internal_object_id__].[segment_summary.csv_051005A450FA4D79A057F742CB194014]' role='measure' type='quantitative' />
+      <column caption='Avg Annual Spend' datatype='real' name='[avg_annual_spend]' role='measure' type='quantitative' />
+      <column caption='Avg Frequency' datatype='real' name='[avg_frequency]' role='measure' type='quantitative' />
+      <column caption='Avg Ltv' datatype='real' name='[avg_ltv]' role='measure' type='quantitative' />
+      <column caption='Avg Price' datatype='real' name='[avg_price]' role='measure' type='quantitative' />
+      <column caption='Pct Of Sample' datatype='real' name='[pct_of_sample]' role='measure' type='quantitative' />
+      <column caption='Respondents' datatype='integer' name='[respondents]' role='measure' type='quantitative' />
+      <column caption='Segment' datatype='string' name='[segment]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/rs/8c0qgc4n2wq_zm_plv_5rl1r0000gn/T/tableau-temp/#TableauTemp_1hjxma219earkp10dndxw1kogm1z.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/17/2025 09:26:29 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>segment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[segment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>segment</remote-alias>
+              <ordinal>0</ordinal>
+              <family>segment_summary.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>respondents</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[respondents]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>respondents</remote-alias>
+              <ordinal>1</ordinal>
+              <family>segment_summary.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pct_of_sample</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[pct_of_sample]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pct_of_sample</remote-alias>
+              <ordinal>2</ordinal>
+              <family>segment_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_price</remote-alias>
+              <ordinal>3</ordinal>
+              <family>segment_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_frequency</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_frequency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_frequency</remote-alias>
+              <ordinal>4</ordinal>
+              <family>segment_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_annual_spend</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_annual_spend]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_annual_spend</remote-alias>
+              <ordinal>5</ordinal>
+              <family>segment_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_ltv</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_ltv]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_ltv</remote-alias>
+              <ordinal>6</ordinal>
+              <family>segment_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='segment_summary.csv' id='segment_summary.csv_051005A450FA4D79A057F742CB194014'>
+            <properties context=''>
+              <relation connection='textscan.1mvz3a50qihasu1azqn530finerw' name='segment_summary.csv' table='[segment_summary#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='string' name='segment' ordinal='0' />
+                  <column datatype='integer' name='respondents' ordinal='1' />
+                  <column datatype='real' name='pct_of_sample' ordinal='2' />
+                  <column datatype='real' name='avg_price' ordinal='3' />
+                  <column datatype='real' name='avg_frequency' ordinal='4' />
+                  <column datatype='real' name='avg_annual_spend' ordinal='5' />
+                  <column datatype='real' name='avg_ltv' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Behavior - Channels'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='channel_summary' name='federated.10j5yo00ble4j813dlnft1moe6zh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10j5yo00ble4j813dlnft1moe6zh'>
+            <column caption='Channel' datatype='string' name='[channel]' role='dimension' type='nominal' />
+            <column-instance column='[channel]' derivation='None' name='[none:channel:nk]' pivot='key' type='nominal' />
+            <column caption='Penetration Pct' datatype='real' name='[penetration_pct]' role='measure' type='quantitative' />
+            <column caption='Selections' datatype='integer' name='[selections]' role='measure' type='quantitative' />
+            <column-instance column='[penetration_pct]' derivation='Sum' name='[sum:penetration_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[selections]' derivation='Sum' name='[sum:selections:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.10j5yo00ble4j813dlnft1moe6zh].[sum:penetration_pct:qk]' value='N' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.10j5yo00ble4j813dlnft1moe6zh].[sum:penetration_pct:qk]' />
+              <size column='[federated.10j5yo00ble4j813dlnft1moe6zh].[sum:penetration_pct:qk]' />
+              <tooltip column='[federated.10j5yo00ble4j813dlnft1moe6zh].[sum:selections:qk]' />
+              <text column='[federated.10j5yo00ble4j813dlnft1moe6zh].[none:channel:nk]' />
+              <text column='[federated.10j5yo00ble4j813dlnft1moe6zh].[sum:penetration_pct:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{97FECECE-E53A-412C-9F86-94A8A0544067}' />
+    </worksheet>
+    <worksheet name='Behavior - Frequency'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Arial'>Purchase Frequency Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='survey_clean' name='federated.073xpsf0utt7n41e9z0p50bj8t89' />
+          </datasources>
+          <datasource-dependencies datasource='federated.073xpsf0utt7n41e9z0p50bj8t89'>
+            <column-instance column='[__tableau_internal_object_id__].[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' pivot='key' type='quantitative' />
+            <column caption='survey_clean.csv' datatype='table' name='[__tableau_internal_object_id__].[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]' role='measure' type='quantitative' />
+            <column-instance column='[purchase_frequency]' derivation='None' name='[none:purchase_frequency:nk]' pivot='key' type='nominal' />
+            <column caption='Purchase Frequency' datatype='string' name='[purchase_frequency]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.073xpsf0utt7n41e9z0p50bj8t89].[none:purchase_frequency:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:purchase_frequency:nk]' />
+              <groupfilter function='member' level='[none:purchase_frequency:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.073xpsf0utt7n41e9z0p50bj8t89].[none:purchase_frequency:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.073xpsf0utt7n41e9z0p50bj8t89].[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' palette='blue_teal_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.073xpsf0utt7n41e9z0p50bj8t89].[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' />
+              <size column='[federated.073xpsf0utt7n41e9z0p50bj8t89].[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' />
+              <text column='[federated.073xpsf0utt7n41e9z0p50bj8t89].[none:purchase_frequency:nk]' />
+              <text column='[federated.073xpsf0utt7n41e9z0p50bj8t89].[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2625BCA4-DE58-41F3-AC3C-291EC2B45A28}' />
+    </worksheet>
+    <worksheet name='Behavior - Spend'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='survey_clean' name='federated.073xpsf0utt7n41e9z0p50bj8t89' />
+          </datasources>
+          <datasource-dependencies datasource='federated.073xpsf0utt7n41e9z0p50bj8t89'>
+            <column caption='Annual Spend' datatype='real' name='[annual_spend]' role='measure' type='quantitative' />
+            <column-instance column='[annual_spend]' derivation='Avg' name='[avg:annual_spend:qk]' pivot='key' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.073xpsf0utt7n41e9z0p50bj8t89].[avg:annual_spend:qk]' value='c&quot;¥&quot;#,##0;-&quot;¥&quot;#,##0' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.073xpsf0utt7n41e9z0p50bj8t89].[avg:annual_spend:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.073xpsf0utt7n41e9z0p50bj8t89].[avg:annual_spend:qk]' />
+              <text column='[federated.073xpsf0utt7n41e9z0p50bj8t89].[avg:annual_spend:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.073xpsf0utt7n41e9z0p50bj8t89].[none:gender:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{137A3B8B-F1AE-468B-A1E7-B24F37876D12}' />
+    </worksheet>
+    <worksheet name='Demographics - Age'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Arial'>Age Distribution Focus On 21-30</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='survey_clean' name='federated.073xpsf0utt7n41e9z0p50bj8t89' />
+          </datasources>
+          <datasource-dependencies datasource='federated.073xpsf0utt7n41e9z0p50bj8t89'>
+            <column-instance column='[__tableau_internal_object_id__].[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' pivot='key' type='quantitative' />
+            <column caption='survey_clean.csv' datatype='table' name='[__tableau_internal_object_id__].[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]' role='measure' type='quantitative' />
+            <column caption='Age Group' datatype='string' name='[age_group]' role='dimension' type='nominal' />
+            <column-instance column='[age_group]' derivation='None' name='[none:age_group:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.073xpsf0utt7n41e9z0p50bj8t89].[none:age_group:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.073xpsf0utt7n41e9z0p50bj8t89].[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.073xpsf0utt7n41e9z0p50bj8t89].[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' scope='cols' value='Numbers of Respondents' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.073xpsf0utt7n41e9z0p50bj8t89].[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.073xpsf0utt7n41e9z0p50bj8t89].[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-pane' value-column='[federated.073xpsf0utt7n41e9z0p50bj8t89].[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' z-order='1' />
+          </pane>
+        </panes>
+        <rows>[federated.073xpsf0utt7n41e9z0p50bj8t89].[none:age_group:nk]</rows>
+        <cols>[federated.073xpsf0utt7n41e9z0p50bj8t89].[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]</cols>
+        <annotations>
+          <annotation class='area' id='2' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run fontalignment='0' fontname='Open Sans,Clear Sans,Helvetica Neue,Helvetica,Arial,Segoe UI Emoji,SF Pro,sans-serif' fontsize='9'>64% aged 21-30</run>
+              <run fontalignment='0'>Æ&#10;</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='48.830917874396135'>
+                  <node-reference>
+                    <axis>[federated.073xpsf0utt7n41e9z0p50bj8t89].[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord cell-offset='0.411765'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.073xpsf0utt7n41e9z0p50bj8t89].[none:age_group:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;26-30&quot;</bucket>
+                    </multibucket>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='72.60386473429952'>
+                  <node-reference>
+                    <axis>[federated.073xpsf0utt7n41e9z0p50bj8t89].[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord cell-offset='0.654189'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.073xpsf0utt7n41e9z0p50bj8t89].[none:age_group:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;26-30&quot;</bucket>
+                    </multibucket>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{5A1C9BA0-47ED-4A15-8DAD-C0D33D407066}' />
+    </worksheet>
+    <worksheet name='Demographics - Gender'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Arial'>Gender Distribution (n=273)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='survey_clean' name='federated.073xpsf0utt7n41e9z0p50bj8t89' />
+          </datasources>
+          <datasource-dependencies datasource='federated.073xpsf0utt7n41e9z0p50bj8t89'>
+            <column-instance column='[__tableau_internal_object_id__].[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]' derivation='Count' name='[__tableau_internal_object_id__].[pcto:cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='survey_clean.csv' datatype='table' name='[__tableau_internal_object_id__].[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]' role='measure' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.073xpsf0utt7n41e9z0p50bj8t89].[__tableau_internal_object_id__].[pcto:cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.073xpsf0utt7n41e9z0p50bj8t89].[none:gender:nk]' />
+              <wedge-size column='[federated.073xpsf0utt7n41e9z0p50bj8t89].[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' />
+              <size column='[federated.073xpsf0utt7n41e9z0p50bj8t89].[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' />
+              <text column='[federated.073xpsf0utt7n41e9z0p50bj8t89].[__tableau_internal_object_id__].[pcto:cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' />
+              <text column='[federated.073xpsf0utt7n41e9z0p50bj8t89].[none:gender:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='185' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2039BEA0-D0B9-4A0A-B5EA-A0429DD2F6B7}' />
+    </worksheet>
+    <worksheet name='Demographics - Trial'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Arial'>Hard Seltzer Trial by Segment (87% overall)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='survey_clean' name='federated.073xpsf0utt7n41e9z0p50bj8t89' />
+          </datasources>
+          <datasource-dependencies datasource='federated.073xpsf0utt7n41e9z0p50bj8t89'>
+            <column caption='Segment Label (Clean)' datatype='string' name='[Calculation_6766095497541324802]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [gender] = &quot;Female&quot; AND [age_code] IN (2, 3) AND [tried_hard_seltzer] = &quot;Yes&quot; THEN&#10;    &quot;Female 21-30\n(High Volume)&quot;&#10;ELSEIF [gender] = &quot;Male&quot; AND [age_code] IN (2, 3) AND [tried_hard_seltzer] = &quot;Yes&quot; THEN&#10;    &quot;Male 21-30\n(High Value)&quot;&#10;ELSEIF [age_code] IN (2, 3) AND [tried_hard_seltzer] = &quot;Yes&quot; THEN&#10;    &quot;Other 21-30&quot;&#10;ELSEIF [age_code] IN (2, 3) THEN&#10;    &quot;Age 21-30\n(Not Tried)&quot;&#10;ELSE&#10;    &quot;Other Segments&quot;&#10;END' />
+              <aliases>
+                <alias key='&quot;Age 21-30\\n(Not Tried)&quot;' value='Age 21-30  Not Tried' />
+                <alias key='&quot;Female 21-30\\n(High Volume)&quot;' value='Female 21-30 &amp; High Volume' />
+                <alias key='&quot;Male 21-30\\n(High Value)&quot;' value='Male 21-30 &amp; High Value' />
+              </aliases>
+            </column>
+            <column-instance column='[__tableau_internal_object_id__].[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' pivot='key' type='quantitative' />
+            <column caption='survey_clean.csv' datatype='table' name='[__tableau_internal_object_id__].[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]' role='measure' type='quantitative' />
+            <column caption='Age Code' datatype='integer' name='[age_code]' role='dimension' type='ordinal' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_6766095497541324802]' derivation='None' name='[none:Calculation_6766095497541324802:nk]' pivot='key' type='nominal' />
+            <column-instance column='[tried_hard_seltzer]' derivation='None' name='[none:tried_hard_seltzer:nk]' pivot='key' type='nominal' />
+            <column caption='Tried Hard Seltzer' datatype='string' name='[tried_hard_seltzer]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.073xpsf0utt7n41e9z0p50bj8t89].[none:Calculation_6766095497541324802:nk]' direction='DESC' using='[federated.073xpsf0utt7n41e9z0p50bj8t89].[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.073xpsf0utt7n41e9z0p50bj8t89].[none:tried_hard_seltzer:nk]' />
+              <text column='[federated.073xpsf0utt7n41e9z0p50bj8t89].[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='162' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.073xpsf0utt7n41e9z0p50bj8t89].[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]</rows>
+        <cols>[federated.073xpsf0utt7n41e9z0p50bj8t89].[none:Calculation_6766095497541324802:nk]</cols>
+      </table>
+      <simple-id uuid='{AC933E78-C3D7-4B44-96B8-A01525799F23}' />
+    </worksheet>
+    <worksheet name='Preferences - Flavors'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Arial'>Top 5 Flavor Preferences</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='flavor_summary' name='federated.1k36hp21d559lm18reo6v0r0cxxe' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1k36hp21d559lm18reo6v0r0cxxe'>
+            <column caption='Flavor' datatype='string' name='[flavor]' role='dimension' type='nominal' />
+            <column-instance column='[flavor]' derivation='None' name='[none:flavor:nk]' pivot='key' type='nominal' />
+            <column caption='Pct' datatype='real' name='[pct]' role='measure' type='quantitative' />
+            <column-instance column='[pct]' derivation='Sum' name='[sum:pct:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1k36hp21d559lm18reo6v0r0cxxe].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.1k36hp21d559lm18reo6v0r0cxxe].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.1k36hp21d559lm18reo6v0r0cxxe].[sum:pct:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1k36hp21d559lm18reo6v0r0cxxe].[sum:pct:qk]' value='n#,##0.0&quot;%&quot;;-#,##0.0&quot;%&quot;' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1k36hp21d559lm18reo6v0r0cxxe].[sum:pct:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.13093923032283783' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#818b91' />
+                <format attr='mark-transparency' value='139' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1k36hp21d559lm18reo6v0r0cxxe].[sum:pct:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1k36hp21d559lm18reo6v0r0cxxe].[sum:pct:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='10' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='2.9060773849487305' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#4e79a7' />
+                <format attr='mark-transparency' value='249' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1k36hp21d559lm18reo6v0r0cxxe].[sum:pct:qk] + [federated.1k36hp21d559lm18reo6v0r0cxxe].[sum:pct:qk])</rows>
+        <cols>[federated.1k36hp21d559lm18reo6v0r0cxxe].[none:flavor:nk]</cols>
+      </table>
+      <simple-id uuid='{68BF0B16-C6E5-44F4-9A2D-476A0CBDB6EA}' />
+    </worksheet>
+    <worksheet name='Preferences - Packaging'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Arial'>Packaging Preferences (multi-select allowed)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='survey_clean' name='federated.073xpsf0utt7n41e9z0p50bj8t89' />
+          </datasources>
+          <datasource-dependencies datasource='federated.073xpsf0utt7n41e9z0p50bj8t89'>
+            <column caption='Glass' datatype='integer' name='[Calculation_6836745716700774401]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([glass_bottle])' />
+            </column>
+            <column caption='Can' datatype='integer' name='[Calculation_6836745716700934146]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([metal_can])' />
+            </column>
+            <column caption='Plastic' datatype='integer' name='[Calculation_6836745716700999683]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([plastic_bottle])' />
+            </column>
+            <column caption='Glass Bottle' datatype='integer' name='[glass_bottle]' role='measure' type='quantitative' />
+            <column caption='Metal Can' datatype='integer' name='[metal_can]' role='measure' type='quantitative' />
+            <column caption='Plastic Bottle' datatype='integer' name='[plastic_bottle]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_6836745716700774401]' derivation='User' name='[usr:Calculation_6836745716700774401:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_6836745716700934146]' derivation='User' name='[usr:Calculation_6836745716700934146:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_6836745716700999683]' derivation='User' name='[usr:Calculation_6836745716700999683:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.073xpsf0utt7n41e9z0p50bj8t89].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.073xpsf0utt7n41e9z0p50bj8t89].[usr:Calculation_6836745716700774401:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.073xpsf0utt7n41e9z0p50bj8t89].[usr:Calculation_6836745716700934146:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.073xpsf0utt7n41e9z0p50bj8t89].[usr:Calculation_6836745716700999683:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.073xpsf0utt7n41e9z0p50bj8t89].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.073xpsf0utt7n41e9z0p50bj8t89].[usr:Calculation_6836745716700774401:qk]&quot;</bucket>
+              <bucket>&quot;[federated.073xpsf0utt7n41e9z0p50bj8t89].[usr:Calculation_6836745716700934146:qk]&quot;</bucket>
+              <bucket>&quot;[federated.073xpsf0utt7n41e9z0p50bj8t89].[usr:Calculation_6836745716700999683:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.073xpsf0utt7n41e9z0p50bj8t89].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.073xpsf0utt7n41e9z0p50bj8t89].[usr:Calculation_6836745716700774401:qk]' value='n#,##0;-#,##0' />
+            <format attr='text-format' field='[federated.073xpsf0utt7n41e9z0p50bj8t89].[usr:Calculation_6836745716700934146:qk]' value='n#,##0;-#,##0' />
+            <format attr='text-format' field='[federated.073xpsf0utt7n41e9z0p50bj8t89].[usr:Calculation_6836745716700999683:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.073xpsf0utt7n41e9z0p50bj8t89].[:Measure Names]' />
+              <text column='[federated.073xpsf0utt7n41e9z0p50bj8t89].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='203' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.073xpsf0utt7n41e9z0p50bj8t89].[:Measure Names]</rows>
+        <cols>[federated.073xpsf0utt7n41e9z0p50bj8t89].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{5A70F832-D45F-436E-90AA-84156C2F1C38}' />
+    </worksheet>
+    <worksheet name='Preferences - Price'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Arial'>Price Acceptance Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='survey_clean' name='federated.073xpsf0utt7n41e9z0p50bj8t89' />
+          </datasources>
+          <datasource-dependencies datasource='federated.073xpsf0utt7n41e9z0p50bj8t89'>
+            <column-instance column='[__tableau_internal_object_id__].[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' pivot='key' type='quantitative' />
+            <column caption='survey_clean.csv' datatype='table' name='[__tableau_internal_object_id__].[survey_clean.csv_1097F8D8F7BA4314B0C880283828F663]' role='measure' type='quantitative' />
+            <column-instance column='[price_range]' derivation='None' name='[none:price_range:nk]' pivot='key' type='nominal' />
+            <column caption='Price Range' datatype='string' name='[price_range]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.073xpsf0utt7n41e9z0p50bj8t89].[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' scope='rows' value='Numbers of Respondents' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.073xpsf0utt7n41e9z0p50bj8t89].[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' min='0' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-transparency' value='219' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.073xpsf0utt7n41e9z0p50bj8t89].[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]</rows>
+        <cols>[federated.073xpsf0utt7n41e9z0p50bj8t89].[none:price_range:nk]</cols>
+      </table>
+      <simple-id uuid='{4CEDED0F-C6F9-4F49-AD80-5CB18E0B1EF1}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='93'>
+    <window class='worksheet' name='Demographics - Gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='267'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.073xpsf0utt7n41e9z0p50bj8t89].[none:gender:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.073xpsf0utt7n41e9z0p50bj8t89].[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' type='size' />
+            <card param='[federated.073xpsf0utt7n41e9z0p50bj8t89].[none:gender:nk]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{787D2086-8D46-4D6C-A747-B927D0911E36}' />
+    </window>
+    <window class='worksheet' name='Demographics - Age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.073xpsf0utt7n41e9z0p50bj8t89].[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{666B9943-A0F4-45A6-897C-9F3EC74D08F2}' />
+    </window>
+    <window class='worksheet' name='Demographics - Trial'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.073xpsf0utt7n41e9z0p50bj8t89].[none:tried_hard_seltzer:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{BD32B9DB-1410-48EB-8659-183995321FBB}' />
+    </window>
+    <window class='worksheet' name='Preferences - Packaging'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.073xpsf0utt7n41e9z0p50bj8t89].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{A0EDEAAA-BA33-4DA5-97F3-DC441357819F}' />
+    </window>
+    <window class='worksheet' name='Preferences - Flavors'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F716DC60-7196-4989-ABD3-83AC7F6C0195}' />
+    </window>
+    <window class='worksheet' name='Preferences - Price'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{3C639868-F2EF-4344-98F2-4440DB290242}' />
+    </window>
+    <window class='worksheet' name='Behavior - Channels'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.10j5yo00ble4j813dlnft1moe6zh].[sum:penetration_pct:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D774EA11-E8F5-4019-A0AC-9963D3405E9C}' />
+    </window>
+    <window class='worksheet' name='Behavior - Frequency'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.073xpsf0utt7n41e9z0p50bj8t89].[__tableau_internal_object_id__].[cnt:survey_clean.csv_1097F8D8F7BA4314B0C880283828F663:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C32997BE-20D6-4FF8-9592-73728BA5FE58}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Behavior - Spend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.073xpsf0utt7n41e9z0p50bj8t89].[avg:annual_spend:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{524F039C-8CB1-4D52-A2A6-0E8B1238CEE2}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='128' name='Behavior - Spend' width='288'>
+      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
+      QjH/BySyQJBMj2ADAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
