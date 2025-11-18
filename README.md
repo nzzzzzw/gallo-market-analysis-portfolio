@@ -359,6 +359,7 @@ After data cleaning and transformation, the following structured datasets were c
 **Use Case:** Validate/challenge original gender-based targeting assumptions
 
 </details>
+
 ## 3. Executive Summary
 
 ### Overview of Findings
@@ -377,16 +378,20 @@ This analysis of 273 Chinese consumer survey responses reveals **four critical i
 **4. Gender-Differentiated Consumption Patterns**  
 Male consumers show 2x higher annual spend (¥276 vs ¥135) driven by higher purchase frequency (18.2 vs 10.5 times/year). Target strategy should include both genders rather than female-only focus.
 
-**Target Market Size:**  
-Primary target segment (ages 21-30, tried hard seltzers) represents 56.4% of sample (154/273 respondents: 92 female + 62 male).
+**Target Market Definition:**  
+Primary target segment (ages 21-30, tried hard seltzers) represents 56.4% of sample (154/273 respondents: 92 female + 62 male). Age concentration shows 64% of sample in 21-30 range.
 
----
+**Important Limitation:**  
+Survey did not test wine-base vs malt-base consumer preference. Wine-base positioning (core product differentiation) requires validation through blind taste testing before significant marketing investment.
 
 ## 4. Insights Deep Dive
 
 ### 4.1 Market Readiness & Category Awareness
 
 **Visualization:** *Demographics - Trial*
+<div align="center">
+  <img src="assets/images/Demographics-Trial.png"> 
+</div>
 
 **Key Finding:** 87% trial rate (238/273 respondents) across all segments.
 
@@ -398,11 +403,12 @@ Primary target segment (ages 21-30, tried hard seltzers) represents 56.4% of sam
 
 **Implication:** High existing category awareness means marketing resources can focus on brand switching and competitive differentiation rather than consumer education about the hard seltzer category itself.
 
----
-
 ### 4.2 Channel Preferences & Distribution
 
 **Visualization:** *Behavior - Channels*
+<div align="center">
+  <img src="assets/images/Behavior - Channels.png"  width="400"> 
+</div>
 
 **Key Finding:** 85% convenience store preference (233/273 respondents), followed by 76% supermarkets (206/273) and 46% e-commerce (126/273).
 
@@ -417,11 +423,12 @@ Primary target segment (ages 21-30, tried hard seltzers) represents 56.4% of sam
 
 **Implication:** Convenience stores and supermarkets are primary purchase channels, indicating offline retail should be prioritized over e-commerce for initial market entry. Fresh platforms and brand websites show limited adoption.
 
----
-
 ### 4.3 Price Sensitivity & Premium Positioning
 
 **Visualization:** *Preferences - Price*
+<div align="center">
+  <img src="assets/images/Preferences - Price.png"> 
+</div>
 
 **Key Finding:** 63% willing to pay ¥10+ per unit (173/273), with average acceptable price of ¥12.7.
 
@@ -436,15 +443,28 @@ Primary target segment (ages 21-30, tried hard seltzers) represents 56.4% of sam
 
 **Implication:** Two-thirds of target market accepts premium pricing (¥10-15+), supporting a price point above mass-market competitors while remaining accessible to majority of consumers.
 
----
 
 ### 4.4 Target Segment Analysis & Gender Economics
 
 **Visualizations:** *Demographics - Gender, Demographics - Age, Behavior - Spend*
+<div align="center">
+  <img src="assets/images/Demographics - Gender.png"  width="400"> 
+</div>
+<div align="center">
+  <img src="assets/images/Demographics - Age.png"> 
+</div>
 
-**Key Finding:** Primary target (ages 21-30, tried seltzers) = 154 respondents (56.4% of sample), with significant gender consumption differences.
+**Key Finding:** Primary target (ages 21-30, tried seltzers) = 154 respondents (56.4% of sample), with strong age concentration in 21-30 range (64% of total sample).
 
-**Gender Breakdown:**
+**Age Distribution:**
+- **21-30 age range: 64% of sample** (175/273 respondents)
+  - 21-25: 46% (largest single cohort)
+  - 26-30: 18%
+- 31-35: 12%
+- Other ages: 24%
+- Sharp drop-off after age 30 validates millennial focus
+
+**Gender Overview:**
 | Metric | Female (n=167) | Male (n=106) | Difference |
 |--------|---------------|--------------|------------|
 | % of Sample | 61.2% | 38.8% | — |
@@ -466,13 +486,15 @@ Primary target segment (ages 21-30, tried hard seltzers) represents 56.4% of sam
 - Male 21-30 sample value: 62 × ¥308 = ¥19,096
 - Male segment contributes 57.4% of target segment value despite being only 40.3% of target size
 
-**Implication:** Male consumers drive disproportionate value through higher purchase frequency, not higher price tolerance. A gender-neutral dual-target approach maximizes both market reach (56.4% vs 33.7% female-only) and total addressable value.
-
----
+**Implication:** Strong concentration in 21-30 age range (64%) validates this as primary target demographic. Male consumers drive disproportionate value through higher purchase frequency (18.2 vs 11.8 times/year), not higher price tolerance. A gender-neutral dual-target approach maximizes both market reach (56.4% vs 33.7% female-only) and total value capture.
 
 ### 4.5 Product Preferences - Packaging
 
 **Visualization:** *Preferences - Packaging*
+<div align="center">
+  <img src="assets/images/Preferences - Packaging.png"> 
+</div>
+
 
 **Key Finding:** 72% prefer glass bottles (197/273), followed by 62% cans (170/273) and 8% plastic (22/273). Multi-select allowed.
 
@@ -488,11 +510,13 @@ Primary target segment (ages 21-30, tried hard seltzers) represents 56.4% of sam
 
 **Implication:** Glass packaging shows strong preference across both genders, supporting premium positioning. Cans appeal to majority as complementary format for different occasions.
 
----
-
 ### 4.6 Product Preferences - Flavors
 
 **Visualization:** *Preferences - Flavors*
+<div align="center">
+  <img src="assets/images/Preferences - Flavors.png"> 
+</div>
+
 
 **Key Finding:** Apple/Pear/Peach leads at 54.6%, followed by Grape/Cherry/Blueberry (45.4%) and citrus flavors (41.8%).
 
@@ -505,11 +529,14 @@ Primary target segment (ages 21-30, tried hard seltzers) represents 56.4% of sam
 
 **Implication:** Launch portfolio should include 3-4 core flavors covering fruit-forward categories (apple/pear, berry, citrus, tropical) that appeal to 40-55% of target market each.
 
----
 
 ### 4.7 Purchase Frequency Distribution
 
 **Visualization:** *Behavior - Frequency*
+<div align="center">
+  <img src="assets/images/Behavior - Frequency.png"  width="400"> 
+</div>
+
 
 **Key Finding:** Purchase frequency splits between monthly (44%) and yearly (44%) buyers, with 12% weekly+ frequency.
 
@@ -526,297 +553,143 @@ Primary target segment (ages 21-30, tried hard seltzers) represents 56.4% of sam
 
 **Implication:** Male consumers' 2x higher annual spend is driven by purchase frequency (18.2 vs 10.5 times/year), not by higher spending per occasion. Frequency-based segmentation may be more relevant than demographic segmentation for retention strategies.
 
----
-
-### 4.8 Age Distribution & Target Focus
-
-**Visualization:** *Demographics - Age*
-
-**Key Finding:** 64% of sample aged 21-30, with 46% concentrated in 21-25 age bracket.
-
-**Age Distribution:**
-- 18-20: ~8%
-- 21-25: ~46% (largest group)
-- 26-30: ~18%
-- 31-35: ~12%
-- 36-40: ~5%
-- 41-45: ~6%
-- 45-50: ~4%
-- 51+: ~3%
-
-**Combined 21-30:** 64% of sample (175/273 respondents)
-
-**Implication:** Strong concentration in 21-30 age range validates this as primary target demographic. Drop-off after age 30 suggests focusing marketing resources on millennial consumers rather than broader age spectrum.
-
----
-
-### 4.9 Wine-Base Positioning - Data Limitation
-
-**Key Finding:** Survey did not test consumer preference for wine-based vs malt-based vs vodka-based hard seltzers in blind format.
-
-**Available Data:**
-- Gender price parity: Female ¥12.80 vs Male ¥12.45 (only 2.8% premium)
-- No direct questions about alcohol base preferences
-- No blind taste testing conducted
-
-**Data Gap:** Core product differentiation hypothesis (wine-base as premium positioning) is **unvalidated** by this dataset.
-
-**Implication:** Wine-base positioning should be validated through additional research (blind taste tests, A/B messaging studies) before committing significant marketing investment. Focus messaging on tangible, verifiable benefits: glass packaging (72% preference documented), natural ingredients, and premium quality attributes.
-
-
 ## 5. Strategic Recommendations
 
-### Executive Summary
+Based on 273 consumer survey responses, the following recommendations guide Barefoot Hard Seltzer's China market entry strategy.
 
-Based on analysis of 273 consumer survey responses, the following strategic recommendations guide Barefoot Hard Seltzer's China market entry:
+### Core Strategy
 
-**Core Strategy:** Gender-neutral dual-target approach (ages 21-30, all genders) with convenience-store-led distribution and premium glass-bottle positioning at ¥15-18 price point.
+**Target Segment:** Ages 21-30, all genders (56.4% of sample = 154 respondents)
+- Female 21-30: 33.7% of sample, ¥154 annual spend, 11.8 purchases/year
+- Male 21-30: 22.7% of sample, ¥308 annual spend, 19.1 purchases/year
+- Gender-neutral approach captures both volume (female) and value (male)
 
-**Market Opportunity:** ¥8.5B total addressable market (45M urban millennials × ¥188 average annual spend), with conservative Year 1 target of ¥254M revenue (3% market capture).
+**Rationale:** Male consumers contribute 57% of target segment value despite smaller size. Female-only targeting would forfeit this high-value segment.
 
-**Critical Pivot from Original Assumptions:**
-1. **Target:** Gender-neutral (56.4% of market) vs female-only (34%)
-2. **Distribution:** Convenience-first (85% preference, 14.5:1 ROI) vs e-commerce-first
-3. **Positioning:** Tangible benefits (glass, natural ingredients) vs unvalidated wine-base claims
 
----
+### Distribution Strategy
 
-### Phase 1: Market Entry Strategy (Months 1-6)
+**Channel Priority:** Convenience stores first, then supermarkets, then e-commerce
 
-#### Channel-First Launch
+**Survey Findings:**
+- Convenience stores: 85% penetration (233/273)
+- Supermarkets: 76% penetration (206/273)
+- E-commerce: 46% penetration (126/273)
+- Fresh platforms: 24% penetration (66/273)
 
-**Prioritize Convenience Store Distribution**
-- Target: 5,000 convenience stores in tier-1 cities (Shanghai, Beijing, Shenzhen)
-- Pilot: 500 stores in Shanghai (Months 1-2) to validate conversion rates and velocity
-- Expected reach: 2.5M daily consumer touchpoints
-- Unit economics: 14.5:1 LTV/CAC ratio (¥35 CAC) vs 4.6:1 e-commerce
+**Recommended Rollout:**
+1. Launch in convenience stores (tier-1 cities: Shanghai, Beijing, Shenzhen)
+2. Pilot 500 stores to validate velocity before scaling
+3. Add supermarkets once convenience model validated
+4. E-commerce as complementary channel for discovery and rural reach
 
-**Data-backed rationale:** 85% of target consumers purchase hard seltzers at convenience stores vs 46% e-commerce. Convenience offers 3x superior ROI and enables impulse purchase behavior critical for beverage alcohol.
+**Rationale:** High offline penetration (85% convenience, 76% supermarket) indicates consumers prefer in-person purchases. E-commerce serves as complementary channel, not primary.
 
----
+### Product Strategy
 
-#### Premium Glass-First Product Strategy
+**Packaging:**
+- **Lead:** 330ml glass bottles at ¥15-18 (72% prefer glass, 63% accept ¥10+ pricing)
+- **Secondary:** 355ml cans at ¥12-14 for portability occasions (62% also prefer cans)
+- **Avoid:** Plastic bottles (only 8% preference)
 
-**Lead SKU: 330ml Glass Bottles (¥15-18)**
-- Packaging: Premium glass with minimalist label design
-- Target: 72% of consumers who prefer glass packaging
-- Margin: 40% gross margin at ¥15-18 pricing
-- Positioning: Premium quality, sustainability, Instagram-worthy
+**Flavors:**
+Launch with 3-4 core SKUs covering top preferences:
+1. Apple/Pear/Peach (54.6%)
+2. Grape/Cherry/Blueberry (45.4%)
+3. Lemon/Grapefruit/Orange (41.8%)
+4. Mango/Pineapple/Passion Fruit (32.2%)
 
-**Secondary SKU: 355ml Cans (¥12-14)**
-- Purpose: Portability occasions (beach, outdoor, travel)
-- Target: 62% who also prefer cans for specific occasions
-- Timing: Introduce 3-6 months post-launch once glass establishes brand
+**ABV:** 5% standard across all products (industry norm)
 
-**Avoid:** Plastic bottles (16% preference, undermines premium positioning)
+**Rationale:** Glass preference (72%) supports premium positioning. Top 4 flavors each appeal to 30-55% of target market, providing variety while focusing portfolio.
 
-**Data-backed rationale:** Glass preference (72%) combined with premium price acceptance (63% willing to pay ¥10+) validates ¥15-18 pricing. Glass adds ¥0.50-1.00 cost but enables 15%+ price premium.
+### Pricing Strategy
 
----
+**Recommended Price Point:** ¥15-18 per unit (330ml glass)
 
-#### Target Segment Strategy (Gender-Neutral)
+**Survey Support:**
+- 63% accept ¥10+ pricing (173/273)
+- Average acceptable price: ¥12.7
+- Gender price parity: Female ¥12.80 vs Male ¥12.45 (only 2.8% difference)
 
-**Primary Target: Urban Millennials 21-30, All Genders**
-- Market size: 56.4% of sample = 45M consumers nationally
-- Composition:
-  - Male 21-30: 22.7% (high-value: ¥308/year, 19.1 purchases/year)
-  - Female 21-30: 33.7% (high-volume: ¥154/year, 11.8 purchases/year)
-- Combined TAM: ¥8.5B (vs ¥4.6B female-only)
+**Positioning:** Premium tier above mass-market RIO (~¥7-8), competitive with import Horoyoi (~¥12-15)
 
-**Differentiated Messaging (Not Segmentation):**
-- **For males:** Social occasions, flavor variety, convenience, sessionability
-- **For females:** Wellness, low-calorie, premium quality, natural ingredients
-- **Shared:** Same product, channels, pricing—only messaging differs
+**Rationale:** Two-thirds of target market accepts premium pricing, supporting position above mass market while remaining accessible.
 
-**Avoid:** 
-- Age targeting above 35 (frequency drops significantly)
-- Gender-exclusive product positioning (forfeits 59% of segment value)
-- Rural markets without urban validation
+### Messaging Strategy
 
-**Data-backed rationale:** Male segment contributes 59% of target value despite being only 40% of target size. Gender-neutral approach captures full ¥8.5B TAM vs ¥4.6B female-only limitation.
+**Core Benefits (Data-Supported):**
+- Premium glass packaging (72% preference)
+- Natural ingredients, low sugar (health-conscious positioning)
+- International quality standards (Gallo brand equity)
+- 3-4 diverse flavor options
 
----
+**Gender-Differentiated Messaging:**
+- **Female focus:** Wellness, low-calorie, premium quality, natural ingredients
+- **Male focus:** Social occasions, flavor variety, convenience
+- **Implementation:** Same product/channels/pricing, different marketing content
 
-### Phase 2: Product & Messaging Optimization (Months 7-12)
+**Avoid Claims Requiring Validation:**
+- Wine-base as superior taste (not tested in survey)
+- Wine heritage appeal (no data on consumer preference)
 
-#### Flavor Portfolio
+**Rationale:** Lead with tangible, verifiable benefits. Wine-base positioning requires blind taste testing before marketing investment.
 
-**Launch Flavors (4 core SKUs):**
-1. Apple/Pear/Peach (55% preference)
-2. Grape/Cherry/Blueberry (45%)
-3. Lemon/Grapefruit/Orange (42%)
-4. Mango/Pineapple/Passion Fruit (36%)
-
-**Year 2 Innovation:**
-- Local flavor test: Green tea or Plum (35% interest) as limited edition
-- Seasonal rotations based on Year 1 velocity data
-
-**Standardization:**
-- 5% ABV across all SKUs (industry standard, 60%+ acceptance)
-- Natural flavoring (no artificial colors/sweeteners)
-- Low calorie positioning (vs sweeter RIO competitor)
-
----
-
-#### Positioning & Messaging
-
-**Lead with Tangible Benefits:**
-- ✅ "Premium glass packaging"
-- ✅ "Natural ingredients, no artificial colors"
-- ✅ "Lower sugar than leading brands"
-- ✅ "International quality, California heritage"
-
-**De-emphasize Unvalidated Claims:**
-- ⚠️ "Wine-based superior taste" (requires blind taste test validation)
-- ⚠️ "Sophisticated wine heritage" (no data supporting consumer preference)
-
-**Gender-Differentiated Channels:**
-- **Female:** Partner with fitness/wellness influencers, lifestyle KOLs on Xiaohongshu
-- **Male:** Partner with sports/social KOLs, lifestyle content on Douyin
-
----
-
-#### Marketing Mix
+### Marketing Approach
 
 **Primary Channels:**
-1. **In-store sampling** (convenience stores): Direct trial conversion for 87% who've tried category
-2. **KOL partnerships:** Leverage 233 respondents influenced by friend referrals/social proof
-3. **Short video content:** 126 respondents influenced by short video platforms (Douyin/Xiaohongshu)
-4. **WeChat mini-program:** Loyalty and repeat purchase tracking (46% use e-commerce platforms)
+1. **In-store sampling:** Trial conversion at convenience stores (87% already tried category)
+2. **KOL partnerships:** Fitness/wellness influencers (female), lifestyle/social KOLs (male)
+3. **Social media content:** Short video platforms (Douyin, Xiaohongshu)
+4. **WeChat mini-program:** Loyalty tracking and repeat purchases
 
-**Budget Allocation (indicative):**
-- 40% In-store activation (sampling, merchandising, placement fees)
-- 30% Digital/KOL partnerships
-- 20% Brand awareness (video content, social media)
-- 10% E-commerce launch preparation
+**Target Behaviors:**
+- Focus on brand switching (not category trial, given 87% awareness)
+- Emphasize "better than what you're drinking now"
+- Leverage social proof and friend referrals
 
----
+**Rationale:** High category awareness (87% trial) means marketing should focus on competitive differentiation and brand switching rather than consumer education.
 
-### Phase 3: Geographic & Channel Expansion (Year 2+)
+### Geographic Rollout
 
-#### Market Expansion Sequencing
+**Year 1:** Tier-1 cities (Shanghai, Beijing, Shenzhen)
+- Validate product-market fit
+- Establish convenience store model
+- Test pricing and messaging effectiveness
 
-**Year 1: Tier-1 Cities**
-- Shanghai, Beijing, Shenzhen (30M+ urban millennials)
-- 5,000 convenience store placements
-- Validate product-market fit and unit economics
-
-**Year 2: Tier-2 Cities**
-- Guangzhou, Hangzhou, Chengdu, Wuhan (50M+ expansion potential)
-- 10,000 additional convenience store placements
+**Year 2+:** Expand to tier-2 cities (Guangzhou, Hangzhou, Chengdu)
+- Scale proven model
 - Add supermarket channel
+- Launch e-commerce for rural reach
 
-**Year 3+: National Scale**
-- Tier-3 cities and digital-first rural markets
-- 30,000+ total points of distribution
-- E-commerce as primary rural channel
+**Rationale:** Survey sample concentrated in urban markets. Validate urban model before expanding to untested geographies.
 
----
+### Required Validations
 
-#### Channel Diversification Timeline
+Before significant marketing investment, validate the following assumptions:
 
-**Month 1-6:** Convenience stores only (focus, validate, learn)
-**Month 6-9:** Add supermarkets (76% penetration, 10:1 ROI)
-**Month 9-12:** Launch e-commerce (Tmall/JD.com flagship stores)
-**Year 2:** Add fresh platforms (Hema, 7Fresh) for premium niche
+**1. Wine-Base Positioning**
+- **Data Gap:** Survey did not test consumer preference for wine vs malt vs vodka base
+- **Required Test:** Blind taste test with 200+ consumers (wine-labeled vs unlabeled vs alternatives)
+- **Decision Point:** If no preference detected, pivot messaging to tangible benefits (glass packaging, natural ingredients, international quality)
+- **Priority:** High - this is core product differentiation claim
 
-**Data-backed rationale:** Sequential channel rollout maximizes learning and minimizes risk. Convenience stores provide fastest feedback loop for product-market fit before expanding to slower-turn channels.
+**2. Price Elasticity**
+- **Data Gap:** Survey shows stated acceptance (63% accept ¥10+), not actual purchase behavior
+- **Required Test:** A/B pricing test in pilot stores (¥15 vs ¥18)
+- **Decision Point:** Optimize for total revenue (price × volume)
 
----
+**3. Convenience Store Velocity**
+- **Data Gap:** Survey shows channel preference (85%), not sales throughput
+- **Required Test:** 500-store pilot measuring units sold per store per week
+- **Decision Point:** Validate minimum velocity (15-20 units/store/week) supports profitability before scaling
 
-### Financial Projections & Targets
+**4. Messaging Effectiveness**
+- **Data Gap:** Gender-differentiated messaging hypothesis untested
+- **Required Test:** A/B test wellness vs social positioning with tracked customer cohorts
+- **Decision Point:** Invest in effective messaging approach, adjust ineffective
 
-#### Year 1 Conservative Model (3% Market Capture)
-
-**Revenue:**
-- Target customers: 1.35M (3% of 45M TAM)
-- Average annual spend: ¥188 per customer
-- **Total revenue: ¥254M**
-
-**Gross Margin:**
-- 40% gross margin on ¥15-18 pricing
-- **Gross profit: ¥102M**
-
-**Customer Acquisition:**
-- Blended CAC: ¥45 (convenience ¥35, supermarket ¥50, e-commerce ¥110)
-- Total CAC: ¥61M for 1.35M customers
-
-**Contribution Margin:**
-- Gross profit (¥102M) - CAC (¥61M) = **¥41M contribution**
-
-**Break-even:** Month 8-10 (assuming ¥30M fixed costs for production setup, initial inventory, team)
-
----
-
-#### Year 3 Target (10% Market Capture)
-
-**Revenue:**
-- Target customers: 4.5M (10% of 45M TAM)
-- Average annual spend: ¥188 per customer
-- **Total revenue: ¥846M** (3.3x Year 1)
-
-**Margin Improvement:**
-- Gross margin expansion to 45% (scale economies)
-- CAC reduction to ¥35 blended (channel optimization)
-
-**Profitability:**
-- EBITDA margin: 15-20%
-- Path to profitability: Month 18-24
-
----
-
-### Risk Mitigation & Validation
-
-#### Critical Assumptions Requiring Pre-Launch Validation
-
-**1. Wine-Base Positioning Effectiveness (HIGH PRIORITY)**
-- **Risk:** Core differentiation claim unvalidated
-- **Test:** Blind taste test (wine-labeled vs unlabeled vs vodka-based, n=200+)
-- **Timeline:** Complete before major marketing investment (Month -2)
-- **Decision:** If no preference detected, pivot messaging to "natural ingredients + premium packaging"
-
-**2. Convenience Store Velocity**
-- **Risk:** Sell-through below break-even threshold
-- **Test:** 500-store Shanghai pilot with target 20 units/store/week
-- **Timeline:** Months 1-2
-- **Decision:** If velocity <15 units/week, accelerate supermarket/e-commerce channels
-
-**3. Price Elasticity at ¥15-18**
-- **Risk:** Survey acceptance doesn't translate to purchase behavior
-- **Test:** ¥15 vs ¥18 pricing in controlled pilot markets
-- **Timeline:** Within Month 1-2 pilot
-- **Decision:** If ¥18 hurts velocity >20%, default to ¥15; if ¥15 sells out, test ¥16-17
-
-**4. Gender Messaging Effectiveness**
-- **Risk:** Differentiated messaging doesn't drive incremental sales vs generic
-- **Test:** A/B test wellness vs social positioning with tracked customer cohorts
-- **Timeline:** Months 3-6
-- **Decision:** Double down on effective messaging, pivot away from ineffective
-
----
-
-#### Contingency Plans
-
-**If wine-base shows no preference:**
-→ Immediate pivot to "premium natural ingredients + international quality" messaging
-→ No production impact (product unchanged)
-
-**If convenience velocity underperforms:**
-→ Accelerate supermarket channel (Month 3-4 vs Month 6-9)
-→ Increase e-commerce investment (Month 6-7 vs Month 9-12)
-→ Preserve flexibility by negotiating short-term convenience contracts
-
-**If ¥15-18 pricing hits resistance:**
-→ Introduce ¥12-14 can format earlier (Month 3-4 vs Month 6+)
-→ Test ¥13-15 glass pricing
-→ Maintain premium positioning with "better value" messaging vs mass-market
-
-**If male segment underperforms:**
-→ Still avoid female-only pivot (would limit TAM to ¥4.6B)
-→ Adjust messaging but maintain product/channel strategy
-→ Investigate whether issue is messaging, distribution, or product-market fit
-
----
+**Next Step:** Execute pilot program in 500 Shanghai convenience stores to validate assumptions before national scaling.
 
 ## 6. Methodology & Frameworks
 
@@ -845,30 +718,7 @@ Based on analysis of 273 consumer survey responses, the following strategic reco
 | Horoyoi | Shochu | China import | ¥12-15 | Urban 25-40 |
 | **Barefoot** | **Wine** | **Proposed** | **¥15-18** | **Urban 21-30, both genders** |
 
----
 
-### Data Quality & Limitations
-
-**Strengths:**
-- ✅ Reasonable sample size (n=273) for exploratory research
-- ✅ Focused demographic (urban millennials 21-35)
-- ✅ Comprehensive questionnaire (88 variables)
-- ✅ High trial rate enables behavior-based analysis (87% tried)
-
-**Limitations:**
-- ⚠️ Self-reported data subject to recall bias (frequency, spend estimates)
-- ⚠️ Urban sample may not represent rural markets (55% other cities, 45% tier-1)
-- ⚠️ Cross-sectional design prevents causal inference
-- ⚠️ Wine-base preference not directly tested (requires follow-up validation)
-- ⚠️ October-November timing may miss seasonal variation
-
-**Mitigation:**
-- Triangulate with industry benchmarks where available
-- Validate financial assumptions through pilot before scaling
-- Conduct blind taste testing for wine-base positioning claims
-- Monitor actual purchase behavior vs stated preferences
-
----
 
 ## Acknowledgments
 
@@ -887,40 +737,8 @@ Based on analysis of 273 consumer survey responses, the following strategic reco
 - 273 Chinese consumers who participated in the survey
 - MSM program faculty for research methodology guidance
 
----
-
-**Project Timeline:**
-- Original Project: October-December 2020 (8 weeks, team project)
-- Portfolio Evolution: November 2025 (2 weeks, independent work)
-
 **Last Updated:** November 17, 2025  
 **Author:** Niko Wang  
 **Contact:** wzzclot@gmail.com | [LinkedIn](https://www.linkedin.com/in/zizhuo-wang-niko)
 
 ---
-
-## 📝 Key Changes from 2020 Analysis
-
-**Major Strategic Pivots:**
-
-1. **Target Segmentation:** Female-only (34%) → Gender-neutral dual-target (56.4%)
-   - *Rationale:* Male segment contributes 59% of value despite smaller size
-
-2. **Market Sizing:** ¥4.6B TAM → ¥8.5B TAM (+85%)
-   - *Rationale:* Expanding target from female-only to both genders
-
-3. **Distribution Strategy:** E-commerce-first → Convenience-store-led
-   - *Rationale:* 85% convenience preference vs 46% e-commerce; 3x better ROI
-
-4. **Positioning:** Wine-base as core → Tangible benefits (glass, natural ingredients)
-   - *Rationale:* Wine-base preference unvalidated; requires blind taste testing
-
-5. **Financial Targets:** ¥230M Year 1 (5% capture) → ¥254M Year 1 (3% capture, larger TAM)
-   - *Rationale:* More conservative capture rate on expanded TAM
-
-**Data Quality Improvements:**
-- Removed unvalidated demographic assumptions (education %, income %, city tier %)
-- Added transparency on missing values (6.16% overall)
-- Clarified geographic distribution (45% tier-1, 55% other major cities)
-- Validated all business metrics through systematic SQL queries
-- Separated stated preferences from validated behaviors
