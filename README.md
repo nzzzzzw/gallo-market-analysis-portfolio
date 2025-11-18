@@ -115,7 +115,7 @@ This portfolio transforms the 2020 Excel-based analysis to demonstrate professio
 </details>
 
 <details>
-<summary><b>📊 Quick Links for Project Documentation →</b></summary>
+<summary><b>📊 Quick Links for Project Resources →</b></summary>
 
 **Interactive Dashboard:**
 - [Consumer Insights (Tableau Book) →](/visualizations/barefoot-hard-seltzer-market-analysis.twb)  
@@ -139,139 +139,234 @@ This portfolio transforms the 2020 Excel-based analysis to demonstrate professio
 
 ## 2. Data Structure Overview
 
-### Survey Design & Methodology
+### Survey Overview
 
 **Primary Data Collection:**
 - **Platform:** Wenjuanxing (WJX) Survey Platform
 - **Sample Size:** n = 273 Chinese consumers
 - **Target Demographic:** Ages 21-35, urban consumers
 - **Distribution:** WeChat, social media, university networks
-- **Timeline:** 3 weeks (October-November 2020)
-- **Response Rate:** ~65% completion rate
+- **Timeline:** 6 days
 - **Geographic Distribution:** 45% Beijing/Shanghai/Guangzhou, 55% other major cities
+
+---
 
 ### Data Architecture
 
-**Survey Structure (88 variables across 5 dimensions):**
+**Original Survey Structure (88 variables across 5 dimensions):**
 
 ```
-survey_data (273 rows × 88 columns)
+survey_raw (273 rows × 88 columns)
 │
 ├── Demographics (8 variables)
-│   ├── Gender (binary: Male/Female)
+│   ├── Gender (binary: 0=Male, 1=Female)
 │   ├── Age Group (8 categories: 18-20, 21-25, 26-30, 31-35, 36-40, 41-45, 45-50, 51+)
-│   ├── City/Province (text)
+│   ├── City/Province (text: 3 columns for location data)
 │   └── Preferred ABV (6 categories: 2-5%, 5-10%, 10-20%, 20-40%, 40%+, none)
 │
-├── Product Preferences (22 variables)
-│   ├── Alcohol Type Preferences (12 binary flags)
-│   ├── Flavor Preferences (11 binary + 11 ranking)
-│   ├── Packaging Preference (3 binary: glass, can, plastic)
-│   ├── ABV Preference (6 categories)
-│   └── Price Range (5 categories: ¥0-5, ¥5-10, ¥10-15, ¥15-20, ¥20+)
+├── Alcohol Type Preferences (12 variables)
+│   └── Binary flags (0/1): Fruit wine, Rice wine, Sparkling wine, Cocktail, Beer, 
+│       Red wine, Yellow wine, Baijiu, Whiskey, Brandy, Gin, Vodka
 │
-├── Purchase Behavior (16 variables)
+├── Trial & Purchase Behavior (7 variables)
 │   ├── Trial Status (binary: tried hard seltzer yes/no)
 │   ├── Willingness to Try (binary)
 │   ├── Purchase Frequency (4 categories: daily, weekly, monthly, yearly)
-│   ├── Brand Awareness (4 binary: RIO, Horoyoi, Chill, other)
-│   ├── Purchase Channels (6 binary: convenience, supermarket, fresh, e-commerce, brand, other)
-│   └── Consumption Occasions (multiple select)
+│   └── Brand Awareness (4 binary: RIO, Horoyoi, Chill, other)
 │
-├── Brand Perceptions (15 variables)
-│   ├── Purchase Decision Factors (10 binary)
+├── Flavor Preferences (22 variables)
+│   ├── Tried Flavors (11 binary flags)
+│   └── Willing to Try Flavors (11 binary flags)
+│       • Apple/Pear/Peach • Grape/Cherry/Blueberry • Mango/Pineapple/Passion
+│       • Lemon/Grapefruit/Orange • Other Fruit • Yogurt • Ginger • Cola
+│       • Apple Vinegar • Tea • Other Non-fruit
+│
+├── Product Perceptions (13 variables)
 │   ├── Alcohol Base Concern (binary)
-│   ├── Health Perception (binary)
-│   └── Alcohol vs Non-alcohol Appeal (binary)
+│   ├── Health Perception (binary: low-cal as healthy)
+│   ├── Alcohol vs Non-alcohol Appeal (binary)
+│   └── Purchase Decision Factors (10 binary): Price, Taste, Calories, Ingredients,
+│       Packaging, Origin, Quality, Convenience, Brand Culture, Brand Awareness
+│
+├── Price & Packaging (10 variables)
+│   ├── Acceptable Price Range (5 categories: ¥0-5, ¥5-10, ¥10-15, ¥15-20, ¥20+)
+│   ├── Material Preference (3 binary: glass, can, plastic)
+│   ├── Package Format (3 binary: single, same-flavor pack, mixed-flavor pack)
+│   ├── Color Preference (4 options: Barefoot, Suntory, RIO Can, RIO Glass)
+│   └── Limited Edition Interest (binary)
+│
+├── Purchase Channels (6 variables)
+│   └── Binary flags: Convenience store, Supermarket, Fresh platform (Hema),
+│       E-commerce, Brand website, Other
 │
 └── Marketing Influence (8 variables)
-    └── Influence Channels (8 binary: celebrity, video, rankings, KOL, media, livestream, referral, other)
+    └── Binary flags: Celebrity endorsement, Short video, Website rankings, 
+        KOL/influencer, Media placement, Livestream, Friend referral, Other
 ```
 
-**Data Quality Metrics:**
-- Missing values: 6.16% overall (primarily in frequency/spend for non-trial respondents)
-- Numeric encoding: Binary (0/1) and categorical (1-8 scales)
-- Multi-select questions: Binary flags (respondents could select multiple options)
 
-### Data Transformation for Analysis
+### SQL-Generated Data Tables
 
-**SQL Preprocessing Steps:**
-1. **Column Renaming:** Translated Chinese column names to English for Tableau compatibility
-2. **Value Decoding:** Converted numeric codes to descriptive labels (e.g., 0 → "Male", 2 → "21-25 years")
-3. **Calculated Fields:** Created behavioral segments, customer lifetime value, annual spend estimates
-4. **Segment Definitions:** Gender-neutral age-based targeting (21-30 primary), frequency tiers, premium segments
-5. **Summary Tables:** Pre-aggregated segment, channel, flavor, and gender comparison data for analysis
-
-**Data Tables Created:**
-```
-survey_clean (main table, 273 rows)
-    ├── Original 88 survey columns
-    ├── Calculated demographics (age_group, segment labels)
-    ├── Behavioral metrics (annual_purchases, annual_spend, ltv_3year)
-    └── Segmentation flags (is_primary_target, is_premium_segment)
-
-segment_summary (4 rows)
-    ├── Segment-level aggregations
-    └── Average frequency, spend, LTV by segment
-
-channel_summary (5 rows)
-    ├── Channel penetration rates
-    └── Selection counts and percentages
-
-flavor_summary (5 rows)
-    ├── Flavor preference rankings
-    └── Selection percentages
-
-gender_comparison (2 rows)
-    ├── Gender-level metrics
-    └── All key performance indicators by gender
-```
+After data cleaning and transformation, the following structured datasets were created:
 
 <details>
-<summary><b>📋 View Complete Variable List (88 columns) →</b></summary>
+<summary><b>📊 Primary Table: survey_clean (273 rows, 45 columns)</b></summary>
 
-**Demographics (8 variables):**
-1. Gender
-2. Age Group
-3-5. Province/City (multi-part)
-6. Preferred ABV Range
+**Base Columns (translated from survey_raw):**
 
-**Alcohol Preferences (12 types):**
-7-18. Fruit wine, Rice wine, Sparkling wine, Cocktail, Beer, Red wine, Yellow wine, Baijiu, Whiskey, Brandy, Gin, Vodka
+| Column Name | Type | Description | Example Values |
+|------------|------|-------------|----------------|
+| `response_id` | Integer | Survey response ID | 1-273 |
+| `gender` | Text | Decoded gender | "Male", "Female" |
+| `age_group` | Text | Age range description | "21-25", "26-30" |
+| `age_code` | Integer | Original age code | 1-8 |
+| `city_tier` | Text | Geographic classification | "Bejing-Shanghai-GuangZhou" |
+| `preferred_abv` | Text | Preferred alcohol % | "2-5%", "5-10%" |
+| `tried_hard_seltzer` | Text | Trial status | "Yes", "No" |
+| `willing_to_try` | Text | Purchase intent | "Yes", "No" |
+| `purchase_frequency` | Text | Purchase pattern | "Daily", "Weekly", "Monthly", "Yearly" |
+| `frequency_code` | Integer | Original frequency code | 1-4 |
+| `price_range` | Text | Acceptable price | "0-5 RMB", "5-10 RMB" |
+| `price_code` | Integer | Original price code | 1-5 |
+| `glass_bottle` | Integer | Glass preference (0/1) | 0, 1 |
+| `metal_can` | Integer | Can preference (0/1) | 0, 1 |
+| `plastic_bottle` | Integer | Plastic preference (0/1) | 0, 1 |
+| `channel_convenience` | Integer | Shops at convenience stores | 0, 1 |
+| `channel_supermarket` | Integer | Shops at supermarkets | 0, 1 |
+| `channel_fresh_platform` | Integer | Uses fresh platforms (Hema) | 0, 1 |
+| `channel_ecommerce` | Integer | Shops online (Taobao, JD) | 0, 1 |
+| `channel_brand_website` | Integer | Uses brand website | 0, 1 |
+| `channel_other` | Integer | Other channels | 0, 1 |
+| `brand_rio` | Integer | Aware of RIO brand | 0, 1 |
+| `brand_horoyoi` | Integer | Aware of Horoyoi brand | 0, 1 |
+| `brand_chill` | Integer | Aware of Chill brand | 0, 1 |
+| `brand_other` | Integer | Aware of other brands | 0, 1 |
+| `flavor_apple_pear_peach` | Integer | Likes apple/pear/peach | 0, 1 |
+| `flavor_grape_cherry_blueberry` | Integer | Likes grape/cherry/blueberry | 0, 1 |
+| `flavor_mango_pineapple_passion` | Integer | Likes tropical fruits | 0, 1 |
+| `flavor_lemon_grapefruit_orange` | Integer | Likes citrus fruits | 0, 1 |
+| `flavor_other_fruit` | Integer | Likes other fruit flavors | 0, 1 |
+| `flavor_tea` | Integer | Likes tea flavor | 0, 1 |
 
-**Hard Seltzer Trial (3 variables):**
-19. Have you tried hard seltzers?
-20. Are you willing to try?
-21. Purchase frequency
+**SQL-Calculated Demographic Fields:**
 
-**Brand Awareness (4 brands):**
-22-25. RIO, Horoyoi, Chill, Other
+| Column Name | Type | Formula/Logic | Values |
+|------------|------|---------------|--------|
+| `age_category` | Text | Groups age_code into strategic segments | "Target Age (21-30)", "Adjacent Age", "Other Age" |
+| `is_target_age` | Integer | Flags primary age demographic | 1 if age_code IN (2,3), else 0 |
+| `city_type` | Text | Simplifies city tier | "Beijing/Shanghai/Guangzhou", "Other Cities" |
 
-**Flavor Preferences (22 variables):**
-26-36. Preference flags (binary)
-37-47. Ranking scores (numeric)
+**SQL-Calculated Business Metrics:**
 
-**Perceptions (3 variables):**
-48. Cares about alcohol base type
-49. Perceives low-cal as healthy
-50. Alcohol more attractive than non-alcohol
+| Column Name | Type | Formula | Description |
+|------------|------|---------|-------------|
+| `price_midpoint` | Real | Midpoint of price range | ¥2.5 to ¥22.5 |
+| `annual_purchases` | Real | Frequency → purchases/year | Daily=365, Weekly=52, Monthly=12, Yearly=1 |
+| `annual_spend` | Real | `annual_purchases × price_midpoint` | Estimated yearly spending in RMB |
+| `ltv_3year` | Real | `annual_spend × 3` | 3-year customer lifetime value |
 
-**Purchase Decision Factors (10 variables):**
-51-60. Price, Taste, Calories, Ingredients, Packaging, Origin, Quality, Convenience, Brand Culture, Brand Awareness
+**SQL-Calculated Segmentation Fields:**
 
-**Price & Packaging (14 variables):**
-61. Acceptable price range
-62-65. Packaging preferences (glass, can, plastic, other)
-66-68. Package format preferences
-69-70. Color and design preferences
+| Column Name | Type | Logic | Purpose |
+|------------|------|-------|---------|
+| `frequency_tier` | Text | Based on annual_purchases | "Heavy User (52+)", "Medium User (12-51)", "Light User (<12)" |
+| `is_heavy_user` | Integer | 1 if frequency ≥52, else 0 | Flag high-frequency customers |
+| `is_light_user` | Integer | 1 if frequency <12, else 0 | Flag low-frequency customers |
+| `is_premium_segment` | Integer | 1 if price willing ≥¥10, else 0 | Flag premium price acceptance |
+| `is_primary_target` | Integer | Age 21-30 AND tried=Yes | Primary marketing target |
+| `is_high_value_segment` | Integer | Primary target AND premium | Most valuable customer segment |
+| `gender_target_segment` | Text | Gender + Age + Trial status | "Female 21-30 (Wellness)", "Male 21-30 (Social)", etc. |
+| `customer_value_tier` | Text | Based on annual_spend | "Tier 1: High (¥300+)" to "Tier 4: Very Low (<¥50)" |
+| `strategic_segment` | Text | Combined targeting logic | "1. High-Value Heavy User", "2. High-Value Light User", etc. |
 
-**Purchase Channels (6 variables):**
-71-76. Convenience, Supermarket, Fresh platform, E-commerce, Brand website, Other
-
-**Marketing Influence (8 variables):**
-77-84. Celebrity, Short video, Rankings, KOL, Media placement, Livestream, Friend referral, Other
 
 </details>
+
+<details>
+<summary><b>📈 Summary Table: segment_summary (5 rows)</b></summary>
+
+**Purpose:** Compare performance across customer segments
+
+**Columns:**
+- `segment` (Text): Segment name
+  - "Female 21-30, Tried"
+  - "Male 21-30, Tried"
+  - "Other 21-30, Tried"
+  - "Age 21-30, Not Tried"
+  - "Other Segments"
+- `respondents` (Integer): Count in each segment
+- `pct_of_sample` (Real): % of total sample
+- `avg_price` (Real): Average acceptable price point (RMB)
+- `avg_frequency` (Real): Average purchases per year
+- `avg_annual_spend` (Real): Average yearly spending (RMB)
+- `avg_ltv` (Real): Average 3-year lifetime value (RMB)
+
+**Use Case:** Identify which demographic segments have highest value and should be prioritized
+
+</details>
+
+<details>
+<summary><b>🏪 Summary Table: channel_summary (5 rows)</b></summary>
+
+**Purpose:** Analyze purchase channel preferences
+
+**Columns:**
+- `channel` (Text): Channel name
+  - "Convenience Store"
+  - "Supermarket"
+  - "E-commerce"
+  - "Fresh Platform"
+  - "Brand Website"
+- `selections` (Integer): Number of respondents selecting this channel
+- `penetration_pct` (Real): % of total sample using this channel
+
+**Use Case:** Determine which distribution channels to prioritize in go-to-market strategy
+
+
+</details>
+
+<details>
+<summary><b>🍹 Summary Table: flavor_summary (5 rows)</b></summary>
+
+**Purpose:** Rank flavor preferences
+
+**Columns:**
+- `flavor` (Text): Flavor category
+  - "Apple/Pear/Peach"
+  - "Grape/Cherry/Blueberry"
+  - "Mango/Pineapple/Passion"
+  - "Lemon/Grapefruit/Orange"
+  - "Tea"
+- `selections` (Integer): Number of respondents who tried/like this flavor
+- `pct` (Real): % of sample preferring this flavor
+
+**Use Case:** Guide product development and flavor portfolio decisions for China market
+
+
+</details>
+
+<details>
+<summary><b>⚖️ Summary Table: gender_comparison (2 rows)</b></summary>
+
+**Purpose:** Compare male vs female consumer behavior
+
+**Columns:**
+- `gender` (Text): "Male", "Female"
+- `respondents` (Integer): Sample size per gender
+- `avg_frequency` (Real): Average purchases per year
+- `avg_price` (Real): Average price acceptance (RMB)
+- `avg_annual_spend` (Real): Average yearly spending (RMB)
+- `avg_ltv` (Real): Average 3-year LTV (RMB)
+- `trial_rate_pct` (Real): % who have tried hard seltzer
+- `premium_pct` (Real): % willing to pay ≥¥10
+- `heavy_user_pct` (Real): % purchasing ≥52 times/year
+- `glass_pref_pct` (Real): % preferring glass bottles
+
+**Use Case:** Validate/challenge original gender-based targeting assumptions
+
+</details>
+
+
 
 ---
 
@@ -293,13 +388,9 @@ This analysis of 273 Chinese consumer survey responses reveals **five critical i
 
 **Business Impact:** Combined target segment (56.4% of sample, ages 21-30, tried seltzers) = **45M urban millennials** × ¥188 average annual spend = **¥8.5B total addressable market**. Conservative Year 1 capture (3% share) = **¥254M revenue opportunity**.
 
----
-
-### Interactive Dashboard
-
 **View Live Dashboard:**  
-👉 [Barefoot Consumer Insights Dashboard (Tableau Public)](placeholder_tableau_public_link)
-
+👉 [Consumer Insights (Tableau Book)](/visualizations/barefoot-hard-seltzer-market-analysis.twb)
+<!-- 
 **Dashboard Organization:**
 
 The interactive dashboard contains **9 visualizations** organized into three thematic sections:
@@ -324,7 +415,7 @@ The interactive dashboard contains **9 visualizations** organized into three the
 - Hover tooltips with detailed metrics
 - Annotations highlighting critical insights
 - Consistent brand color palette throughout
-- Mobile-responsive design
+- Mobile-responsive design -->
 
 ---
 
