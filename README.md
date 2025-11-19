@@ -143,7 +143,6 @@ This portfolio transforms the 2020 Excel-based analysis to demonstrate professio
 - **Timeline:** 6 days
 - **Geographic Distribution:** 45% Beijing/Shanghai/Guangzhou, 55% other major cities
 
----
 
 ### Data Architecture
 
